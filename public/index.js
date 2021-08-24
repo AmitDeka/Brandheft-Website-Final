@@ -1,3 +1,28 @@
+const { gsap } = require("gsap/dist/gsap");
+const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".overlay h1", {
+    duration: 2,
+    opacity: 0,
+    y: "-100%",
+    ease: Expo.easeIn
+})
+gsap.to(".overlay span", {
+    duration: 2,
+    delay: .4,
+    opacity: 0,
+    y: "-100%",
+    ease: Expo.easeIn
+})
+gsap.to(".overlay", {
+    duration: 2,
+    delay: .8,
+    y: "-100%",
+    ease: Expo.easeInOut
+})
+
 // Nav toggle 
 document.getElementById("hamburger").onclick = function toggleMenu() {
     const navToggle = document.getElementsByClassName("toggle");

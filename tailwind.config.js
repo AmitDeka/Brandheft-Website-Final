@@ -20,6 +20,10 @@ module.exports = {
         futuraM: "'Futura Md BT', sans-serif",
         futuraB: "'Futura BdCn BT', serif",
 
+      },
+
+      zIndex: {
+        '999': 999,
       }
     },
   },

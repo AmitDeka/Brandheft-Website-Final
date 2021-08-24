@@ -4,7 +4,8 @@
   "description": "Landing site for BrandHeft ",
   "main": "app.js",
   "scripts": {
-    "build": "tailwindcss build -i src/styles.css -o public/styles.css"
+    "build": "tailwindcss build -i src/styles.css -o public/styles.css",
+    "start": "serve public"
   },
   "keywords": [
     "tailwind",
@@ -15,8 +16,8 @@
   "author": "Amit Deka",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.6",
+    "gsap": "^3.7.1",
+    "serve": "^12.0.0",
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
