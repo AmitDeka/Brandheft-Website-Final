@@ -1,0 +1,25 @@
+{
+  "name": "brandheft",
+  "version": "1.0.0",
+  "description": "Landing site for BrandHeft ",
+  "main": "app.js",
+  "scripts": {
+    "build": "tailwindcss build -i src/styles.css -o public/styles.css"
+  },
+  "keywords": [
+    "tailwind",
+    "html",
+    "css",
+    "landing-page"
+  ],
+  "author": "Amit Deka",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "tailwind-scroll-behavior": "^1.0.0"
+  }
+}
