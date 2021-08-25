@@ -15,18 +15,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="absolute w-full h-screen bg-secondary top-0 z-999 flex flex-col justify-center items-center overlay">
-        <h1
-            class="font-futuraB text-txtcolor text-3xl md:text-5xl lg:text-8xl tracking-wide md:tracking-wider lg:tracking-widest">
-            BrandHeft</h1>
-        <span
-            class="font-futuraL text-sm md:text-lg lg:text-4xl text-txtcolor opacity-50 md:tracking-wide lg:tracking-wider">Enhancing
-            Mission Storie</span>
-    </div>
+<body class="txtcolor">
+    <!-- <div class="overlay">
+        <div class="absolute w-full h-screen bg-secondary top-0 z-999 flex flex-col justify-center items-center">
+            <h1
+                class="font-futuraB text-txtcolor text-3xl md:text-5xl lg:text-8xl tracking-wide md:tracking-wider lg:tracking-widest">
+                BrandHeft</h1>
+            <span
+                class="font-futuraL text-sm md:text-lg lg:text-4xl text-txtcolor opacity-50 md:tracking-wide lg:tracking-wider">Enhancing
+                Mission Storie</span>
+        </div>
+    </div> -->
+
     <!-- navbar starts here -->
 
-    <nav class="flex flex-wrap items-center sticky top-0 left-0 justify-between md:px-10 bg-gray-50 z-50 shadow-sm p-3 transition-shadow ease-in"
+    <nav class="flex flex-wrap items-center sticky top-0 left-0 justify-between md:px-10 bg-gray-200 z-50 shadow-sm p-3 transition-shadow ease-in"
         id="navBar">
         <a href="#" class="flex items-center text-gray-900">
             <img class="w-12 h-12 md:w-14 md:h-14" src="imgs/logo-circle.png" alt="Logo">
@@ -61,7 +64,7 @@
 
     <main>
         <!-- hero starts here -->
-        <section class="pb-10">
+        <section class="pb-10 bg-gray-100">
             <div class="container mx-auto flex flex-col md:flex-row items-center md:pb-1 md:px-14">
                 <div class="w-3/5 md:w-3/5 justify-center items-center p-5">
                     <img class="object-cover object-center rounded" src="./imgs/office.png" alt="Office">
@@ -199,7 +202,7 @@
         <section class="text-gray-600 scroll-smooth" id="service">
             <div class="container px-20 md:px-32 py-24 mx-auto">
                 <div class="text-center mb-10">
-                    <h1 class="text-5xl font-futuraB title-font text-gray-900 mb-4">Our Services</h1>
+                    <h1 class="text-5xl font-futuraB  text-gray-900 mb-4">Our Services</h1>
                     <div class="flex mt-6 justify-center">
                         <div class="w-16 h-1 rounded-full bg-secondary inline-flex"></div>
                     </div>
@@ -207,9 +210,9 @@
                 <div class="flex flex-wrap -m-4 justify-center">
                     <div class="p-4 md:w-1/4">
                         <div
-                            class="h-full border-2 border-gray-600 px-8 py-12 rounded-lg overflow-hidden text-center relative">
+                            class="h-full px-8 py-12 rounded-lg overflow-hidden text-center relative whitespace-nowrap">
                             <h2
-                                class="font-futuraB title-font tracking-widest text-gray-900 mb-10 text-3xl text-center">
+                                class="font-futuraB tracking-widest text-gray-900 mb-8 text-4xl text-center md:text-left">
                                 Branding</h2>
                             <ul class="flex flex-col items-start text-left -mb-1 space-y-2.5 font-futuraL">
                                 <li>
@@ -278,8 +281,8 @@
 
                     <div class="p-4 md:w-1/4">
                         <div
-                            class="h-full border-2 border-gray-600 px-8 py-12 rounded-lg overflow-hidden text-center relative">
-                            <h2 class="font-futuraB tracking-wide text-gray-900 mb-10 text-3xl text-center">
+                            class="h-full px-8 py-12 rounded-lg overflow-hidden text-center relative whitespace-nowrap">
+                            <h2 class="font-futuraB tracking-wide text-gray-900 mb-8 text-4xl text-center md:text-left">
                                 Digital Support</h2>
                             <ul class="flex flex-col items-start text-left font-futuraL -mb-1 space-y-2.5">
                                 <li>
@@ -338,10 +341,12 @@
 
                     <div class="p-4 md:w-1/4">
                         <div
-                            class="h-full border-2 border-gray-600 px-8 py-12 rounded-lg overflow-hidden text-center relative">
-                            <h2 class="font-futuraB title-font tracking-wide text-gray-900 mb-10 text-3xl text-center">
+                            class="h-full px-8 py-12 rounded-lg overflow-hidden text-center relative whitespace-nowrap">
+                            <h2
+                                class="font-futuraB tracking-wide text-gray-900 mb-8 text-4xl text-center md:text-left ">
                                 Mission Stories</h2>
-                            <ul class="flex flex-col items-start text-left font-futuraL -mb-1 space-y-2.5">
+                            <ul
+                                class="flex flex-col items-start text-left font-futuraL -mb-1 space-y-2.5 whitespace-nowrap">
                                 <li>
                                     <span
                                         class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
@@ -388,8 +393,8 @@
 
                     <div class="p-4 md:w-1/4">
                         <div
-                            class="h-full border-2 border-gray-600 px-8 py-12 rounded-lg overflow-hidden text-center relative">
-                            <h2 class="font-futuraB tracking-wide text-gray-900 mb-10 text-3xl text-center">
+                            class="h-full px-8 py-12 rounded-lg overflow-hidden text-center relative whitespace-nowrap">
+                            <h2 class="font-futuraB tracking-wide text-gray-900 mb-8 text-4xl text-center md:text-left">
                                 Printing Services</h2>
                             <ul class="flex flex-col items-start text-left -mb-1 space-y-2.5 font-futuraL">
                                 <li>
@@ -725,8 +730,10 @@
     </footer>
 
     <!-- footer ends here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script type="text/javascipt" src="js/animation.js"></script> -->
 </body>
 
 </html>
