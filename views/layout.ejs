@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandHeft</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/fav/favicon-16x16.png">
+    <link rel="manifest" href="/imgs/fav/site.webmanifest">
+
+    <link type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- <div class="overlay">
+        <div class="absolute w-full h-screen bg-secondary top-0 z-999 flex flex-col justify-center items-center">
+            <h1
+                class="font-futuraB text-txtcolor text-3xl md:text-5xl lg:text-8xl tracking-wide md:tracking-wider lg:tracking-widest">
+                BrandHeft</h1>
+            <span
+                class="font-futuraL text-sm md:text-lg lg:text-4xl text-txtcolor opacity-50 md:tracking-wide lg:tracking-wider">Enhancing
+                Mission Storie</span>
+        </div>
+    </div> -->
+
+    <!-- navbar starts here -->
+
+    <%- include('./partials/navbar.ejs') %>
+
+        <!-- navbar ends here -->
+
+        <main>
+            <%- body %>
+        </main>
+
+        <!-- footer starts here -->
+
+        <%- include('./partials/footer.ejs') %>
+
+            <!-- footer ends here -->
+
+            <%- include('./partials/script.ejs') %>
+</body>
+
+</html>
