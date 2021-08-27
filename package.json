@@ -4,7 +4,8 @@
   "description": "Landing site for BrandHeft ",
   "main": "app.js",
   "scripts": {
-    "build": "tailwindcss build -i src/styles.css -o public/style/styles.css",
+    "build": "tailwindcss build -i public/vendor/tailwind/styles.css -o public/dist/css/main.css",
+    "test": "nodemon app.js",
     "start": "node app.js"
   },
   "keywords": [
@@ -24,6 +25,7 @@
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
+    "nodemon": "^2.0.12",
     "tailwind-scroll-behavior": "^1.0.0"
   }
 }

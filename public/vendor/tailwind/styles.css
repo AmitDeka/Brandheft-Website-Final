@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "Futura Lt BT";
+        font-weight: 300;
+        src: url('fonts/FuturaBT-Light.ttf') format('truetype');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Futura Md BT";
+        font-weight: 500;
+        src: url('fonts/FuturaBT-Medium.ttf') format('truetype');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Futura BdCn BT";
+        font-weight: bold;
+        src: url('fonts/FuturaBT-BoldCondensed.ttf') format('truetype');
+        font-display: swap;
+    }
+
+    h1{
+        @apply text-4xl;
+    }
+    h2{
+        @apply text-3xl;
+    }
+    h3{
+        @apply text-2xl;
+    }
+    h4{
+        @apply text-xl;
+    }
+    h5{
+        @apply text-lg;
+    }
+    h6{
+        @apply text-base;
+    }
+
+    .card{
+        @apply h-full bg-gray-100 shadow-md bg-opacity-100 px-8 pt-5 pb-10 rounded-lg overflow-hidden text-center relative;
+    }
+}
