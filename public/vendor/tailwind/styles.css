@@ -27,4 +27,12 @@
     .card{
         @apply h-full bg-gray-100 shadow-md bg-opacity-100 px-8 pt-5 pb-10 rounded-lg overflow-hidden text-center relative;
     }
+
+    .success{
+        @apply bg-green-400 animate-flash;    
+    }
+
+    .error{
+        @apply bg-red-400 animate-flash;
+    }
 }

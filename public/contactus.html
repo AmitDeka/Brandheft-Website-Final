@@ -70,7 +70,7 @@
         <!-- contact form starts here -->
 
         <section class="text-gray-600 body-font relative">
-            <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div class="container px-28 py-40 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div
                     class="lg:w-1/2 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 md:p-10 pt-44 px-20 pb-10  flex items-end justify-start relative">
                     <iframe
@@ -97,23 +97,32 @@
                     <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Contact Information</h2>
                     <p class="leading-relaxed mb-5 text-gray-600">Fill up the form and our Team will get back to you
                         within 24 hours.</p>
-                    <div class="relative mb-4">
-                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                        <input type="text" id="name" name="name"
-                            class="w-full bg-white rounded border-2 border-gray-300 focus:border-secondary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-300 ease-in-out">
-                    </div>
-                    <div class="relative mb-4">
-                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                        <input type="email" id="email" name="email"
-                            class="w-full bg-white rounded border-2 border-gray-300 focus:border-secondary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-300 ease-in-out">
-                    </div>
-                    <div class="relative mb-4">
-                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                        <textarea id="message" name="message"
-                            class="w-full bg-white rounded border-2 border-gray-300 focus:border-secondary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-300 ease-in-out"></textarea>
-                    </div>
-                    <button
-                        class="text-white bg-secondary border-2 border-secondary py-2 px-6 focus:outline-none hover:bg-pureW hover:text-txtcolor rounded text-lg transition-colors duration-300 ease-in-out">Contact</button>
+                    <form action="https://formspree.io/f/mjvjjykv" method="post" id="contact-form">
+                        <div class="relative mb-4">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                            <input type="text" id="name" name="_name"
+                                class="w-full bg-white rounded border-2 border-gray-300 focus:border-secondary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-300 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="_replyto"
+                                class="w-full bg-white rounded border-2 border-gray-300 focus:border-secondary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-300 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Subject</label>
+                            <input type="text" id="subject" name="_subject"
+                                class="w-full bg-white rounded border-2 border-gray-300 focus:border-secondary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-300 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                            <textarea id="message" name="_message"
+                                class="w-full bg-white rounded border-2 border-gray-300 focus:border-secondary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-300 ease-in-out"></textarea>
+                        </div>
+                        <button
+                            class="text-white bg-secondary border-2 border-secondary py-2 px-6 focus:outline-none hover:bg-pureW hover:text-txtcolor rounded text-lg transition-colors duration-300 ease-in-out">Contact
+                            Us</button>
+                    </form>
+                    <div class="w-4/5 text-center text-base p-4 my-0 mx-auto rounded-2xl" id="status"></div>
                     <p class="text-xs text-gray-500 mt-3 text-center">We respect your privacy and Protecting it
                         seriously.</p>
                 </div>

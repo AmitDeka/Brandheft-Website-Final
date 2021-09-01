@@ -25,7 +25,19 @@ module.exports = {
 
       zIndex: {
         '999': 999,
+      },
+
+      keyframes: {
+        flash: {
+          '0%, 80%': { opacity: '1', pointer: 'all' },
+          '100%': { opacity: '0', pointer: 'none' },
+        }
+      },
+
+      animation: {
+        flash: 'flash 4s ease-in forwards',
       }
+
     },
   },
   variants: {

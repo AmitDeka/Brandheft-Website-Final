@@ -23,75 +23,70 @@ gsap.to(".overlay", {
 })
 
 // Hero section 
-gsap.from("#hero_data", {
+gsap.from("#hero_image", {
     opacity: 0,
     duration: 1,
     delay: 1,
-    x: 90,
+    x: -100,
     ease: Expo.easeIn
 })
 
-gsap.from(".section_title", {
-    y: 30,
+gsap.from("#hero_text", {
     opacity: 0,
     duration: 1,
+    delay: 1,
+    x: 100,
+    ease: Expo.easeIn
+})
+
+gsap.from(".section_content", {
+    y: 50,
+    opacity: 0,
+    duration: 2,
     scrollTrigger: {
-        trigger: ".section_title",
-        start: "top 90%",
-        end: "center 15%",
+        trigger: ".section_container",
+        start: "top 50%",
+        end: "bottom 50%",
         // markers: true,
         toggleActions: "play reverse restart reverse"
     }
 })
 
-gsap.from(".section_headline", {
-    y: 30,
+gsap.from(".section_text_slide", {
     opacity: 0,
-    duration: 1,
+    x: -100,
+    duration: 2,
     scrollTrigger: {
-        trigger: ".section_title",
-        start: "top 90%",
-        end: "center 15%",
+        trigger: ".section_container_text",
+        start: "top 60%",
+        end: "bottom 50%",
         // markers: true,
         toggleActions: "play reverse restart reverse"
     }
 })
 
-gsap.from(".section_footer", {
-    y: 30,
+gsap.from(".service_container-slide--x", {
+    x: 100,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
-        trigger: ".section_title",
-        start: "top 90%",
-        end: "center 15%",
-        // markers: true,
+        trigger: ".service_container",
+        start: "top 60%",
+        end: "center 20%",
+        markers: true,
         toggleActions: "play reverse restart reverse"
     }
 })
 
-gsap.from(".section_image", {
-    y: 30,
+gsap.from(".service_container-slide-x", {
+    x: -100,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
-        trigger: ".section_title",
-        start: "top 90%",
-        end: "center 15%",
-        // markers: true,
-        toggleActions: "play reverse restart reverse"
-    }
-})
-
-gsap.from(".section", {
-    y: 30,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".section_title",
-        start: "top 90%",
-        end: "center 15%",
-        // markers: true,
+        trigger: ".service_container",
+        start: "top 60%",
+        end: "center 20%",
+        markers: true,
         toggleActions: "play reverse restart reverse"
     }
 })
