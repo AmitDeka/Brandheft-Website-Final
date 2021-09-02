@@ -1,50 +1,36 @@
-// // require('dotenv').config();
-// // const express = require('express');
-// // const expressLayouts = require('express-ejs-layouts');
-// // const route = require('./route/route'); nbb                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+require('dotenv').config();
+const express = require('express');
+const path = require('path');
 
-// // const app = express();
+const app = express();
 
-// // app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, './public')));
 
-// // app.use(expressLayouts);
-// // app.set('view engine', 'ejs');
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+})
+app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/about.html'));
+})
+app.get('/services', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/services.html'));
+})
+app.get('/testimonial', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/testimonial.html'));
+})
+app.get('/digitalNE', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/digitalne.html'));
+})
+// blog
+app.get('/digitalNE', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/digitalne.html'));
+})
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/contactus.html'));
+})
 
-
-// // app.use('/', route);
-
-// // // server lister 
-// // const PORT = process.env.PORT || 5050;
-
-// // app.listen(PORT, console.log(`Server running on 127.0.0.1:${PORT}`));
-
-// require('dotenv').config();
-// const express = require('express');
-// const expressLayouts = require('express-ejs-layouts');
-
-
-// const app = express();
-
-// // static folder 
-// app.use(express.static('public'));
-// app.use('/css', express.static(__dirname + 'public/dist/css'));
-
-// // set view engine
-// app.use(expressLayouts);
-// app.set('view engine', 'ejs');
-
-// // parser 
-// app.use(express.urlencoded({ extended: true }));
-
-// // Router 
-// app.use('/', require('./route/route'));
-// // app.use('/auth', require('./route/auth'));
-// // app.use('/dashboard', require('./route/dashboard'));
-
-// // Passport
-
-// // listen to port 
-// const port = process.env.PORT || 5000;
-// app.listen(port, () =>
-//     console.log(`Server running on localhost:${port}`)
-// )
+// listen to port 
+const port = process.env.PORT || 5000;
+app.listen(port, () =>
+    console.log(`Server running on localhost:${port}`)
+)

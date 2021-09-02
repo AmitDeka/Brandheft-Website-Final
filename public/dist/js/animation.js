@@ -73,7 +73,7 @@ gsap.from(".service_container-slide--x", {
         trigger: ".service_container",
         start: "top 60%",
         end: "center 20%",
-        markers: true,
+        // markers: true,
         toggleActions: "play reverse restart reverse"
     }
 })
@@ -86,8 +86,20 @@ gsap.from(".service_container-slide-x", {
         trigger: ".service_container",
         start: "top 60%",
         end: "center 20%",
-        markers: true,
+        // markers: true,
         toggleActions: "play reverse restart reverse"
     }
 })
 
+gsap.from(".client-content", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".client-container",
+        start: "top 50%",
+        end: "bottom 40%",
+        markers: true,
+        toggleActions: "play reverse restart reverse"
+    }
+})
