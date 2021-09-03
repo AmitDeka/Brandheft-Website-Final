@@ -11,6 +11,14 @@ module.exports = {
         pureW: '#ffffff',
         pureB: '#000000',
 
+        primaryC: '#002642',
+        primaryHighC: '#020d1c',
+        secondaryC: '#3a5368',
+        accentC: '#e59500',
+        accentAltC: '#840032',
+        textC: '#e5dada',
+        textAltC: '#acadb4',
+
         fb: '#4267b2',
         insta: '#bc2a8d',
         twitter: '#1da1f2',
