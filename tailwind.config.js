@@ -28,6 +28,10 @@ module.exports = {
         '999': 999,
       },
 
+      boxShadow: {
+        neumorp: '15px 15px 69px rgba(190, 177, 177, 1), -15px -15px 69px rgba(255, 255, 255, 1)',
+      },
+
       keyframes: {
         flash: {
           '0%, 80%': { opacity: '1', pointer: 'all' },
