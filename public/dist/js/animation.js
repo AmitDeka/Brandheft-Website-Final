@@ -99,7 +99,7 @@ gsap.from(".client-content", {
         trigger: ".client-container",
         start: "top 50%",
         end: "bottom 40%",
-        markers: true,
+        // markers: true,
         toggleActions: "play reverse restart reverse"
     }
 })

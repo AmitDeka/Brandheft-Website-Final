@@ -15,21 +15,21 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
-<body class="overflow-x-hidden bg-primary outline-none">
-    <div class="overlay absolute w-full h-screen bg-txtcolor top-0 z-999 flex flex-col justify-center items-center">
+<body class="bg-primaryC">
+    <div class="overlay absolute w-full h-screen bg-primaryC top-0 z-999 flex flex-col justify-center items-center">
         <h1
-            class="font-futuraB text-secondary text-4xl md:text-5xl lg:text-8xl tracking-wide md:tracking-wider lg:tracking-widest">
+            class="font-futuraB text-accentC text-4xl md:text-5xl lg:text-8xl tracking-wide md:tracking-wider lg:tracking-widest">
             BrandHeft</h1>
         <span
-            class="font-futuraL text-base md:text-lg lg:text-4xl text-primary opacity-50 md:tracking-wide lg:tracking-wider">Enhancing
+            class="font-futuraL text-base md:text-lg lg:text-4xl text-textC opacity-50 md:tracking-wide lg:tracking-wider">Enhancing
             Mission Stories</span>
     </div>
 
     <!-- navbar starts here -->
 
-    <nav class="flex flex-wrap items-center sticky top-0 left-0 justify-between md:px-10 bg-primary z-50 shadow-sm p-3 transition-shadow ease-in"
+    <nav class="flex flex-wrap items-center sticky top-0 left-0 justify-between md:px-10 bg-primaryC z-50 shadow-sm p-3 transition-shadow ease-in"
         id="navBar">
-        <a href="" class="flex items-center text-txtcolor">
+        <a href="/" class="flex items-center text-textC">
             <img class="w-12 h-12 md:w-14 md:h-14" src="./dist/imgs/logo-circle.png" alt="Logo">
             <span class="ml-3 text-2xl md:text-3xl font-futuraB">BrandHeft</span>
         </a>
@@ -40,22 +40,18 @@
             </button>
         </div>
         <div class="toggle hidden w-full md:w-auto md:flex text-center font-futuraL mt-2 md:mt-0">
-            <a href="/about"
-                class="block md:inline-block text-txtcolor hover:text-secondary text-xl px-3 py-3 ">About</a>
+            <a href="/about" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">About</a>
             <a href="/services"
-                class="block md:inline-block text-txtcolor hover:text-secondary text-xl px-3 py-3 scroll-smooth">Services</a>
-            <a href="#"
-                class="block md:inline-block text-txtcolor hover:text-secondary text-xl px-3 py-3 ">Testimonials</a>
-            <a href="/digitalNE"
-                class="block md:inline-block text-txtcolor hover:text-secondary text-xl px-3 py-3 ">Digital
+                class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 scroll-smooth">Services</a>
+            <a href="/testimonial"
+                class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Testimonials</a>
+            <a href="/digitalNE" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Digital
                 NE</a>
-            <!-- <a href="digitalne.html"
-                class="block md:inline-block text-txtcolor hover:text-secondary text-xl px-3 py-3 ">Creative Club</a> -->
-            <a href="#" class="block md:inline-block text-txtcolor hover:text-secondary text-xl px-3 py-3 ">Blog</a>
+            <a href="#" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Blog</a>
         </div>
-        <div class="toggle hidden w-full md:w-auto md:flex text-center font-futuraL py-3 md:py-0">
+        <div class="toggle hidden w-full sm:w-auto md:flex text-center font-futuraL py-3 md:py-0">
             <a href="/contact"
-                class="toggle hidden md:flex font-futuraM bg-primary text-txtcolor border-2 border-secondary py-2 px-4 focus:outline-none hover:bg-secondary hover:text-pureW transition-colors duration-200 rounded-full text-base mt-4 md:mt-0">Contact
+                class="toggle hidden sm:flex font-futuraM text-textC bg-primaryC border-2 border-accentC py-2 px-4 focus:outline-none hover:bg-accentC hover:text-white transition-colors duration-300 rounded-full text-base mt-4 md:mt-0">Contact
                 Us
             </a>
         </div>
@@ -65,14 +61,14 @@
 
     <main>
         <!-- hero starts here -->
-        <section class="bg-primary h-screen w-full">
+        <section class="overflow-x-hidden">
             <div class="container mx-auto flex flex-col md:flex-row items-center md:pb-1 md:px-14">
                 <div class="w-4/5 md:w-3/5 justify-center items-center p-5 md:p-8" id="hero_image">
                     <img class="object-cover object-center rounded" src="./dist/imgs/office.png" alt="Office">
                 </div>
                 <div class="w-11/12 md:2/5 justify-center items-center pt-4 md:pt-20 p-1" id="hero_text">
                     <h1
-                        class="text-center font-futuraB md:text-6xl text-4xl leading-tight text-txtcolor mb-10 tracking-wide">
+                        class="text-center font-futuraB md:text-6xl text-4xl leading-tight text-textC mb-10 tracking-wide">
                         Exclusive
                         Design and
                         Marketing
@@ -82,8 +78,8 @@
                         Company's Vision.</h1>
 
                     <div class="flex justify-center">
-                        <a href="contact.html"
-                            class="inline-flex text-pureW bg-secondary border-2 border-secondary py-3 px-6 focus:outline-none hover:bg-white hover:text-txtcolor rounded-full text-lg">Join
+                        <a href="/contact"
+                            class="inline-flex text-pureW bg-secondary border-2 border-secondary py-3 px-6 focus:outline-none hover:bg-primaryC hover:text-textC rounded-full text-lg">Join
                             Now</a>
                     </div>
                 </div>
@@ -154,7 +150,7 @@
 
         <!-- how we do it starts here -->
 
-        <section class="text-gray-600 body-font">
+        <section class="text-gray-600 overflow-x-hidden">
             <div
                 class="container mx-auto flex px-10 md:px-20 py-24 md:flex-row flex-col items-center section_container_text">
                 <div
@@ -203,7 +199,7 @@
 
         <!-- services starts here -->
 
-        <section class="text-gray-600 scroll-smooth" id="service">
+        <section class="text-gray-600 overflow-x-hidden" id="service">
             <div class="container px-20 md:px-32 py-24 mx-auto service_container">
                 <div class="text-center mb-10">
                     <h1 class="text-5xl font-futuraB  text-txtcolor mb-4">Our Services</h1>
@@ -494,7 +490,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -612,16 +607,16 @@
     </main>
     <!-- footer starts here -->
 
-    <footer class="text-gray-600 ">
+    <footer>
         <div
             class="container px-2 md:px-20 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div class="w-80 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-textC">
                     <img class="w-12 h-12" src="./dist/imgs/logo-circle.png" alt="Logo">
                     <span class="ml-3 text-3xl md:text-4xl font-futuraB">Brand<span
-                            class="text-secondary">Heft</span></span>
+                            class="text-accentC">Heft</span></span>
                 </a>
-                <p class="mt-2 text-base font-futuraL text-gray-500">We empathetically collaborate with
+                <p class="mt-2 text-base font-futuraL text-textAltC">We empathetically collaborate with
                     entrepreneual
                     individuals to
                     check off targets on their vision boards. We love conversations – about their goals, ideals and what
@@ -630,53 +625,53 @@
             <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 text-center">
 
                 <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-gray-900 tracking-widest text-2xl font-futuraB mb-3">
+                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
                         TOP SERVICES</h2>
                     <ul class="list-none mb-10 font-futuraL">
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Branding</a>
+                            <a class="text-textAltC hover:text-accentC">Branding</a>
                         </li>
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Digital Support</a>
+                            <a class="text-textAltC hover:text-accentC">Digital Support</a>
                         </li>
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Mission Stories</a>
+                            <a class="text-textAltC hover:text-accentC">Mission Stories</a>
                         </li>
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Printing Services</a>
+                            <a class="text-textAltC hover:text-accentC">Printing Services</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-gray-900 tracking-widest text-2xl font-futuraB mb-3">
+                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
                         QUICK LINKS</h2>
-                    <nav class="list-none mb-10 font-futuraL">
+                    <nav class="list-none mb-10  font-futuraL">
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Services</a>
+                            <a class="text-textAltC hover:text-accentC">Services</a>
                         </li>
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Carrers</a>
+                            <a class="text-textAltC hover:text-accentC">Carrers</a>
                         </li>
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Digital NE</a>
+                            <a class="text-textAltC hover:text-accentC">Digital NE</a>
                         </li>
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Activities</a>
+                            <a class="text-textAltC hover:text-accentC">Activities</a>
                         </li>
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Testimonials</a>
+                            <a class="text-textAltC hover:text-accentC">Testimonials</a>
                         </li>
                         <li class="py-0.5">
-                            <a class="text-gray-600 hover:text-gray-800">Contact Us</a>
+                            <a class="text-textAltC hover:text-accentC">Contact Us</a>
                         </li>
                     </nav>
                 </div>
 
                 <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-gray-900 tracking-widest text-2xl font-futuraB mb-3">
+                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
                         ADDRESS</h2>
-                    <ul class="list-none mb-10 font-futuraL">
+                    <ul class="list-none mb-10 text-textAltC font-futuraL">
                         <li class="py-0.5">
                             Jana path, House No. 17, Bylane 17, Fakharuddin Ali Ahmed Road, Aziz Nagar
                         </li>
@@ -691,21 +686,20 @@
 
             </div>
         </div>
-        <div class="bg-gray-100 ">
+        <div class="bg-primaryHighC">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 BrandHeft —
-                    <a href="https://twitter.com/AmitDeka10" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                <p class="text-textC text-sm text-center sm:text-left">© 2021 BrandHeft —
+                    <a href="https://twitter.com/AmitDeka10" rel="noopener noreferrer" class="text-textAltC ml-1"
                         target="_blank">@AmitDeka</a>
                 </p>
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                    <a class="text-gray-500 hover:text-fb" href="https://www.facebook.com/brandheft/" target="_blank">
+                    <a class="text-textC hover:text-fb" href="https://www.facebook.com/brandheft/" target="_blank">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             class="w-6 h-6" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                         </svg>
                     </a>
-                    <a class="ml-3 text-gray-500 hover:text-twitter" href="https://twitter.com/brandheft"
-                        target="_blank">
+                    <a class="ml-3 text-textC hover:text-twitter" href="https://twitter.com/brandheft" target="_blank">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             class="w-6 h-6" viewBox="0 0 24 24">
                             <path
@@ -713,7 +707,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a class="ml-3 text-gray-500 hover:text-insta" href="https://www.instagram.com/brandheft/"
+                    <a class="ml-3 text-textC hover:text-insta" href="https://www.instagram.com/brandheft/"
                         target="_blank">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
@@ -721,7 +715,7 @@
                             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                         </svg>
                     </a>
-                    <a class="ml-3 text-gray-500 hover:text-linkedin" href="https://www.linkedin.com/company/brandheft"
+                    <a class="ml-3 text-textC hover:text-linkedin" href="https://www.linkedin.com/company/brandheft"
                         target="_blank">
                         <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
