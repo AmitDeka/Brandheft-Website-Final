@@ -37,7 +37,7 @@ module.exports = {
       },
 
       boxShadow: {
-        neumorp: '15px 15px 69px 0 rgba(190, 177, 177, 1), -15px -15px 69px 0 rgba(255, 255, 255, 1)',
+        neu: '0 20px 20px -5px rgba(0, 32, 56, 1), 0 20px 20px -5px rgba(0, 44, 76, 1)',
       },
 
       keyframes: {
@@ -52,15 +52,20 @@ module.exports = {
       },
 
       gridTemplateColumns: {
-        'teamCard': 'repeat(auto-fill, minmax(300px, 1fr))',
-      }
+        'teamCard': 'repeat(auto-fill, minmax(350px, 1fr))',
+      },
+      neumorphismColor: {
+        primaryC: {
+          1: '#002642',
+          2: '#020d1c'
+        },
 
+      },
     },
-  },
-  variants: {
-    extend: {
+    variants: {
+      extend: {
+      },
     },
-  },
-  plugins: [
-  ],
+    plugins: [require('tailwindcss-neumorphism')],
+  }
 }
