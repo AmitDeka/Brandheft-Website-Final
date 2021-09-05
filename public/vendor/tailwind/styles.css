@@ -35,4 +35,19 @@
     .error{
         @apply bg-red-400 animate-flash;
     }
+    .social-icon{
+        @apply cursor-pointer text-textC text-xl m-1;
+    }
+    .facebook{
+        @apply py-1 px-1.5 rounded-full transition duration-75 ease-in  hover:bg-fb;
+    }
+    .twitter{
+        @apply py-1 px-1.5 rounded-full transition duration-75 ease-in  hover:bg-twitter;
+    }
+    .linkedin{
+        @apply py-1 px-1.5 rounded-full transition duration-75 ease-in  hover:bg-linkedin;
+    }
+    .instagram{
+        @apply py-1 px-1.5 rounded-full transition duration-75 ease-in  hover:bg-insta;
+    }
 }

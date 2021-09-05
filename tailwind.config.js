@@ -37,7 +37,7 @@ module.exports = {
       },
 
       boxShadow: {
-        neumorp: '15px 15px 69px rgba(190, 177, 177, 1), -15px -15px 69px rgba(255, 255, 255, 1)',
+        neumorp: '15px 15px 69px 0 rgba(190, 177, 177, 1), -15px -15px 69px 0 rgba(255, 255, 255, 1)',
       },
 
       keyframes: {
@@ -49,16 +49,18 @@ module.exports = {
 
       animation: {
         flash: 'flash 4s ease-in forwards',
+      },
+
+      gridTemplateColumns: {
+        'teamCard': 'repeat(auto-fill, minmax(300px, 1fr))',
       }
 
     },
   },
   variants: {
     extend: {
-      scrollBehavior: ['motion-safe']
     },
   },
   plugins: [
-    require('tailwind-scroll-behavior')(),
   ],
 }
