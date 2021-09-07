@@ -21,8 +21,14 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
-
-
+// Tilt
+VanillaTilt.init(document.querySelectorAll(".tilt_card"), {
+    max: 25,
+    speed: 1000,
+    glare: true,
+    "max-glare": .7,
+    gyroscope: true,
+});
 
 
 // contact form submit
