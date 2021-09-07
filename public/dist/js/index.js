@@ -28,6 +28,10 @@ VanillaTilt.init(document.querySelectorAll(".tilt_card"), {
     glare: true,
     "max-glare": .7,
     gyroscope: true,
+    gyroscopeMinAngleX: -45,
+    gyroscopeMaxAngleX: 45,
+    gyroscopeMinAngleY: -45,
+    gyroscopeMaxAngleY: 45,
 });
 
 

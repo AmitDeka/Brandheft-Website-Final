@@ -13,6 +13,8 @@
     <link rel="manifest" href="./dist/imgs/fav/site.webmanifest">
 
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body class="bg-primaryC">
@@ -123,11 +125,13 @@
                             <label for="message"
                                 class="leading-7 text-sm text-textC font-futuraB tracking-widest">Message</label>
                             <textarea id="message" name="_message"
-                                class="w-full font-futuraL bg-secondaryC rounded border-2 border-secondaryC focus:border-accentC text-base outline-none text-textC py-1 px-3 resize-none leading-6 transition-colors duration-300 ease-in"></textarea>
+                                class="w-full sm:h-24 h-16 font-futuraL bg-secondaryC rounded border-2 border-secondaryC focus:border-accentC text-base outline-none resize-none text-textC py-1 px-3 leading-6 transition-colors duration-300 ease-in"></textarea>
                         </div>
-                        <button
+                        <button type="submit"
                             class=" bg-accentC border-2 text-primaryHighC font-futuraB tracking-widest border-secondary py-2 px-6 focus:outline-none hover:bg-primaryC hover:text-textC rounded text-lg transition-colors duration-300 ease-in">Contact
-                            Us</button>
+                            Us
+                            <i class="bx bx-right-arrow-alt items-center justify-center text-2xl "></i>
+                        </button>
                     </form>
                     <div class="w-4/5 text-center text-base p-4 my-0 mx-auto rounded-2xl" id="status"></div>
                     <p class="text-xs text-textAltC mt-3 text-center">We respect your privacy and Protecting it
@@ -146,10 +150,10 @@
         <div
             class="container px-2 md:px-20 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div class="w-80 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                <a class="flex title-font font-medium items-center md:justify-start justify-center text-textC">
-                    <img class="w-12 h-12" src="./dist/imgs/logo-circle.png" alt="Logo">
-                    <span class="ml-3 text-3xl md:text-4xl font-futuraB">Brand<span
-                            class="text-accentC">Heft</span></span>
+                <a class="flex font-medium items-center sm:justify-start justify-center text-textC">
+                    <img class="w-auto h-12" src="./dist/imgs/logo-flat.png" alt="Logo">
+                    <!-- <span class="ml-3 text-3xl md:text-4xl font-futuraB">Brand<span
+                            class="text-accentC">Heft</span></span> -->
                 </a>
                 <p class="mt-2 text-base font-futuraL text-textAltC">We empathetically collaborate with
                     entrepreneual
