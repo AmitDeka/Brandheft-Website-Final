@@ -17,10 +17,11 @@
     <style>
         .tilt_card {
             transform-style: preserve-3d;
+            transform: perspective(500px);
         }
 
         .tilt_cardC {
-            transform: translateZ(100px);
+            transform: translateZ(50px);
         }
     </style>
 </head>
@@ -116,7 +117,8 @@
                 </div>
                 <div class="flex flex-wrap -m-2 section_content">
                     <div class="p-4 md:p-8 lg:w-1/3 z-40">
-                        <div class="card tilt_card" data-tilt data-tilt-glare="true">
+                        <div class="card tilt_card" data-tilt data-tilt-max="30" data-tilt-speed="1000"
+                            data-tilt-max-glare="0.7" data-tilt-perspective="500">
                             <img class="h-36 w-36 mx-auto pb-8 tilt_cardC" src="./dist/imgs/icon/branding.svg"
                                 alt="Branding IMG">
                             <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3 tilt_cardC">
@@ -134,7 +136,8 @@
                     </div>
 
                     <div class="p-4 md:p-8 lg:w-1/3 z-40">
-                        <div class="card tilt_card" data-tilt data-tilt-glare="true">
+                        <div class="card tilt_card" data-tilt data-tilt-max="30" data-tilt-speed="1000"
+                            data-tilt-max-glare="0.7" data-tilt-perspective="500">
                             <img class="h-36 w-36 mx-auto pb-8 card-content" src="./dist/imgs/icon/digital.svg"
                                 alt="Digital IMG">
                             <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3 card-content">
@@ -149,7 +152,8 @@
                     </div>
 
                     <div class="p-4 md:p-8 lg:w-1/3 z-40">
-                        <div class="card tilt_cardC" data-tilt data-tilt-glare="true">
+                        <div class="card tilt_cardC" data-tilt data-tilt-max="30" data-tilt-speed="1000"
+                            data-tilt-max-glare="0.7" data-tilt-perspective="500">
                             <img class="h-36 w-36 mx-auto pb-8 card-content" src="./dist/imgs/icon/creative.svg"
                                 alt="Creative IMG">
                             <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3 card-content">
@@ -759,8 +763,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="./dist/js/jquery.min.js"></script>
-    <script src="./dist/js/tilt.jquery.min.js"></script>
+    <!-- <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/tilt.jquery.min.js"></script> -->
+    <script type="text/javascript" src="./dist/js/vanilla-tilt.min.js"></script>
     <script src="./dist/js/index.js"></script>
     <script src="./dist/js/animation.js"></script>
 
