@@ -21,6 +21,10 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
+
+
+
+
 // contact form submit
 
 var form = document.getElementById("contact-form");

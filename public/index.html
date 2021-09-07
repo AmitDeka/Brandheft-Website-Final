@@ -13,6 +13,16 @@
     <link rel="manifest" href="dist/imgs/fav/site.webmanifest">
 
     <link rel="stylesheet" href="dist/css/main.css">
+
+    <style>
+        .tilt_card {
+            transform-style: preserve-3d;
+        }
+
+        .tilt_cardC {
+            transform: translateZ(100px);
+        }
+    </style>
 </head>
 
 <body class="bg-primaryC">
@@ -106,11 +116,16 @@
                 </div>
                 <div class="flex flex-wrap -m-2 section_content">
                     <div class="p-4 md:p-8 lg:w-1/3 z-40">
-                        <div class="card">
-                            <img class="h-36 w-36 mx-auto pb-8" src="./dist/imgs/icon/branding.svg" alt="Branding IMG">
-                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3">Brand Markeking
+                        <div class="card tilt_card" data-tilt data-tilt-glare="true">
+                            <img class="h-36 w-36 mx-auto pb-8 tilt_cardC" src="./dist/imgs/icon/branding.svg"
+                                alt="Branding IMG">
+                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3 tilt_cardC">
+                                Brand
+                                Markeking
                             </h1>
-                            <p class="leading-relaxed text-xl font-futuraL text-textAltC mb-3">We aim to provide
+                            <p class="leading-relaxed text-xl font-futuraL text-textAltC mb-3 tilt_cardC">We aim
+                                to
+                                provide
                                 complete branding
                                 solutions
                                 to any business - from strategy to printing.</p>
@@ -119,10 +134,13 @@
                     </div>
 
                     <div class="p-4 md:p-8 lg:w-1/3 z-40">
-                        <div class="card">
-                            <img class="h-36 w-36 mx-auto pb-8" src="./dist/imgs/icon/digital.svg" alt="Digital IMG">
-                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3">Digital NE</h1>
-                            <p class="leading-relaxed text-xl font-futuraL text-textAltC mb-3">To support entrepreneurs
+                        <div class="card tilt_card" data-tilt data-tilt-glare="true">
+                            <img class="h-36 w-36 mx-auto pb-8 card-content" src="./dist/imgs/icon/digital.svg"
+                                alt="Digital IMG">
+                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3 card-content">
+                                Digital NE</h1>
+                            <p class="leading-relaxed text-xl font-futuraL text-textAltC mb-3 card-content">To support
+                                entrepreneurs
                                 and creators
                                 of the
                                 North Eastern part of India to build their brands.</p>
@@ -131,11 +149,14 @@
                     </div>
 
                     <div class="p-4 md:p-8 lg:w-1/3 z-40">
-                        <div class="card">
-                            <img class="h-36 w-36 mx-auto pb-8" src="./dist/imgs/icon/creative.svg" alt="Creative IMG">
-                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3">Creative Club
+                        <div class="card tilt_cardC" data-tilt data-tilt-glare="true">
+                            <img class="h-36 w-36 mx-auto pb-8 card-content" src="./dist/imgs/icon/creative.svg"
+                                alt="Creative IMG">
+                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3 card-content">
+                                Creative Club
                             </h1>
-                            <p class="leading-relaxed text-xl text-textAltC font-futuraL mb-3">To help creative
+                            <p class="leading-relaxed text-xl text-textAltC font-futuraL mb-3 card-content">To help
+                                creative
                                 individuals convert
                                 their
                                 passion into a thriving career and build a personal brand.</p>
@@ -738,8 +759,18 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/tilt.jquery.min.js"></script>
     <script src="./dist/js/index.js"></script>
     <script src="./dist/js/animation.js"></script>
+
+    <!-- <script>
+        VanillaTilt.init(document.querySelectorAll(".tilt_card"), {
+            max: 25,
+            speed: 1000,
+            transition: true,
+        })
+    </script> -->
 </body>
 
 </html>
