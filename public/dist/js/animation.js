@@ -65,31 +65,68 @@ gsap.from(".section_text_slide", {
     }
 })
 
-gsap.from(".service_container-slide--x", {
-    x: 100,
+gsap.from(".service_container-slide-y1", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".service_container",
+        start: "top 70%",
+        end: "bottom 35%",
+        // markers: true,
+        toggleActions: "play reverse restart reverse"
+    }
+})
+gsap.from(".service_container-slide-y2", {
+    y: 100,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
         trigger: ".service_container",
         start: "top 60%",
-        end: "center 20%",
+        end: "bottom 35%",
+        // markers: true,
+        toggleActions: "play reverse restart reverse"
+    }
+})
+gsap.from(".service_container-slide-y3", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".service_container",
+        start: "top 50%",
+        end: "bottom 35%",
         // markers: true,
         toggleActions: "play reverse restart reverse"
     }
 })
 
-gsap.from(".service_container-slide-x", {
-    x: -100,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".service_container",
-        start: "top 60%",
-        end: "center 20%",
-        // markers: true,
-        toggleActions: "play reverse restart reverse"
-    }
-})
+// gsap.from(".service_container-slide-x", {
+//     x: 100,
+//     opacity: 0,
+//     duration: 1,
+//     scrollTrigger: {
+//         trigger: ".service_container",
+//         start: "top 60%",
+//         end: "center 20%",
+//         // markers: true,
+//         toggleActions: "play reverse restart reverse"
+//     }
+// })
+
+// gsap.from(".service_container-slide-y", {
+//     y: 100,
+//     opacity: 0,
+//     duration: 1,
+//     scrollTrigger: {
+//         trigger: ".service_container",
+//         start: "top 60%",
+//         end: "center 20%",
+//         // markers: true,
+//         toggleActions: "play reverse restart reverse"
+//     }
+// })
 
 gsap.from(".client-content", {
     y: 50,

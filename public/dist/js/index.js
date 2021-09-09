@@ -12,10 +12,10 @@ document.getElementById("hamburger").onclick = function toggleMenu() {
 function scrollHeader() {
     const nav = document.getElementById('navBar')
     if (this.scrollY >= 50) {
-        nav.classList.add('shadow-md')
+        nav.classList.add('shadow-xl')
         nav.classList.remove('shadow-sm')
     } else {
-        nav.classList.remove('shadow-md')
+        nav.classList.remove('shadow-xl')
         nav.classList.add('shadow-sm')
     }
 }
@@ -37,7 +37,7 @@ VanillaTilt.init(document.querySelectorAll(".tilt_card"), {
 
 // contact form submit
 
-var form = document.getElementById("contact-form");
+var form = document.getElementById("contact");
 
 async function handleSubmit(event) {
     event.preventDefault();

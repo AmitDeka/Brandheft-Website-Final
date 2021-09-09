@@ -21,7 +21,7 @@
 
     <!-- navbar starts here -->
 
-    <nav class="flex flex-wrap items-center sticky top-0 left-0 justify-between md:px-10 bg-primaryC z-50 shadow-sm p-3 transition-shadow ease-in"
+    <nav class="sticky top-0 left-0 z-50 flex flex-wrap items-center justify-between p-3 transition-shadow ease-in shadow-sm md:px-10 bg-primaryC"
         id="navBar">
         <a href="/" class="flex items-center text-textC">
             <img class="w-12 h-12 md:w-14 md:h-14" src="./dist/imgs/logo-circle.png" alt="Logo">
@@ -29,23 +29,23 @@
         </a>
         <div class="flex md:hidden">
             <button id="hamburger">
-                <img class="toggle block" src="./dist/imgs/icon/bars.svg" width="30" height="30" />
-                <img class="toggle hidden" src="./dist/imgs/icon/times.svg" width="30" height="30" />
+                <img class="block toggle" src="./dist/imgs/icon/bars.svg" width="30" height="30" />
+                <img class="hidden toggle" src="./dist/imgs/icon/times.svg" width="30" height="30" />
             </button>
         </div>
-        <div class="toggle hidden w-full md:w-auto md:flex text-center font-futuraL mt-2 md:mt-0">
-            <a href="/about" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">About</a>
+        <div class="hidden w-full mt-2 text-center toggle md:w-auto md:flex font-futuraL md:mt-0">
+            <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">About</a>
             <a href="/services"
-                class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 scroll-smooth">Services</a>
+                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC scroll-smooth">Services</a>
             <a href="/testimonial"
-                class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Testimonials</a>
-            <a href="/digitalNE" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Digital
+                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Testimonials</a>
+            <a href="/digitalNE" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Digital
                 NE</a>
-            <a href="#" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Blog</a>
+            <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Blog</a>
         </div>
-        <div class="toggle hidden w-full sm:w-auto md:flex text-center font-futuraL py-3 md:py-0">
+        <div class="hidden w-full py-3 text-center toggle sm:w-auto md:flex font-futuraL md:py-0">
             <a href="/contact"
-                class="toggle hidden sm:flex font-futuraM text-textC bg-primaryC border-2 border-accentC py-2 px-4 focus:outline-none hover:bg-accentC hover:text-white transition-colors duration-300 rounded-full text-base mt-4 md:mt-0">Contact
+                class="hidden px-4 py-2 mt-4 text-base transition-colors duration-300 border-2 rounded-full toggle sm:flex font-futuraM text-textC bg-primaryC border-accentC focus:outline-none hover:bg-accentC hover:text-white md:mt-0">Contact
                 Us
             </a>
         </div>
@@ -56,85 +56,85 @@
     <main>
         <!-- map starts here -->
 
-        <section class="pb-10">
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-center">
+        <!-- <section class="pb-10">
+            <div class="container flex flex-col items-center justify-center mx-auto md:flex-row">
                 <div class="w-auto h-auto">
                     <img class="object-cover object-center rounded" src="./dist/imgs/NE-india-map.png" alt="Office">
                 </div>
             </div>
             <div class="pt-2 pb-10">
-                <h1 class="text-center font-futuraB text-5xl">ASSAM ARUNACHAL PRADESH NAGALAND</h1>
+                <h1 class="text-5xl text-center font-futuraB">ASSAM ARUNACHAL PRADESH NAGALAND</h1>
             </div>
-        </section>
+        </section> -->
 
         <!-- map ends here -->
 
 
         <!-- contact form starts here -->
 
-        <section class="body-font relative">
-            <div class="container px-10 sm:px-24 py-40 mx-auto flex sm:flex-nowrap flex-wrap">
+        <section class="relative body-font">
+            <div class="container flex flex-wrap px-10 py-40 mx-auto sm:px-24 sm:flex-nowrap">
                 <div
-                    class="md:w-1/2 bg-primaryC rounded-lg overflow-hidden sm:mr-10 md:p-10 pt-48 px-8 pb-8 md:px-20 sm:pb-10 flex items-end justify-start relative">
+                    class="relative flex items-end justify-start px-8 pt-48 pb-8 overflow-hidden rounded-lg md:w-1/2 bg-primaryC sm:mr-10 md:p-10 md:px-20 sm:pb-10">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.697226886735!2d91.81428991495345!3d26.141413283465784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a59cba131bca3%3A0x6b47c4822f564946!2sBrandHeft!5e0!3m2!1sen!2sin!4v1630332812655!5m2!1sen!2sin"
                         width="100%" height="100%" style="border:0; filter: grayscale(.1) contrast(1.2) opacity(.7);"
                         class="absolute inset-0" frameborder="0" marginheight="0" marginwidth="0" title="map"
                         loading="lazy"></iframe>
-                    <div class="bg-primaryC relative flex flex-wrap py-6 rounded shadow-xl">
-                        <div class="md:w-1/2 px-6">
-                            <h2 class="font-futuraB text-textC tracking-widest text-xs">ADDRESS</h2>
+                    <div class="relative flex flex-wrap py-6 rounded shadow-xl bg-primaryC">
+                        <div class="px-6 md:w-1/2">
+                            <h2 class="text-xs tracking-widest font-futuraB text-textC">ADDRESS</h2>
                             <p class="mt-1 font-futuraL text-accentC">Jana path, House No. 17, Bylane 17, Fakharuddin
                                 Ali Ahmed Road,
                                 Aziz Nagar
                             </p>
                         </div>
-                        <div class="md:w-1/2 px-6 mt-4 md:mt-0">
-                            <h2 class="font-futuraB text-textC tracking-widest text-xs">EMAIL</h2>
-                            <a class="text-accentC leading-relaxed font-futuraL"
+                        <div class="px-6 mt-4 md:w-1/2 md:mt-0">
+                            <h2 class="text-xs tracking-widest font-futuraB text-textC">EMAIL</h2>
+                            <a class="leading-relaxed text-accentC font-futuraL"
                                 href="mailto:info@brandheft.com">info@brandheft.com</a>
-                            <h2 class="font-futuraB text-textC tracking-widest text-xs mt-4">PHONE</h2>
+                            <h2 class="mt-4 text-xs tracking-widest font-futuraB text-textC">PHONE</h2>
                             <p class="leading-relaxed text-accentC font-futuraL">123-456-7890</p>
                         </div>
                     </div>
                 </div>
-                <div class="md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-                    <h2 class="text-textC text-lg mb-1 font-medium title-font">Contact Information</h2>
-                    <p class="leading-relaxed mb-5 text-textAltC">Fill up the form and our Team will get back to you
+                <div class="flex flex-col w-full mt-8 md:w-1/2 md:ml-auto md:py-8 md:mt-0">
+                    <h2 class="mb-1 text-lg font-medium text-textC title-font">Contact Information</h2>
+                    <p class="mb-5 leading-relaxed text-textAltC">Fill up the form and our Team will get back to you
                         within 24 hours.</p>
-                    <form action="https://formspree.io/f/mjvjjykv" method="post" id="contact-form">
+                    <form action="https://formspree.io/f/mjvjjykv" method="post" id="contact">
                         <div class="relative mb-4">
                             <label for="name"
-                                class="leading-7 text-sm text-textC font-futuraB tracking-widest">Name</label>
+                                class="text-sm leading-7 tracking-widest text-textC font-futuraB">Name</label>
                             <input type="text" id="name" name="_name"
-                                class="w-full font-futuraL bg-secondaryC rounded border-2 border-secondaryC focus:border-accentC text-base outline-none text-textC py-1 px-3 leading-8 transition-colors duration-300 ease-in-out">
+                                class="w-full px-3 py-1 text-base leading-8 transition-colors duration-300 ease-in-out border-2 rounded outline-none font-futuraL bg-secondaryC border-secondaryC focus:border-accentC text-textC">
                         </div>
                         <div class="relative mb-4">
                             <label for="email"
-                                class="leading-7 text-sm text-textC font-futuraB tracking-widest">Email</label>
+                                class="text-sm leading-7 tracking-widest text-textC font-futuraB">Email</label>
                             <input type="email" id="email" name="_replyto"
-                                class="w-full font-futuraL bg-secondaryC rounded border-2 border-secondaryC focus:border-accentC text-base outline-none text-textC py-1 px-3 leading-8 transition-colors duration-300 ease-in">
+                                class="w-full px-3 py-1 text-base leading-8 transition-colors duration-300 ease-in border-2 rounded outline-none font-futuraL bg-secondaryC border-secondaryC focus:border-accentC text-textC">
                         </div>
                         <div class="relative mb-4">
                             <label for="email"
-                                class="leading-7 text-sm text-textC font-futuraB tracking-widest">Subject</label>
+                                class="text-sm leading-7 tracking-widest text-textC font-futuraB">Subject</label>
                             <input type="text" id="subject" name="_subject"
-                                class="w-full font-futuraL bg-secondaryC rounded border-2 border-secondaryC focus:border-accentC text-base outline-none text-textC py-1 px-3 leading-8 transition-colors duration-300 ease-in">
+                                class="w-full px-3 py-1 text-base leading-8 transition-colors duration-300 ease-in border-2 rounded outline-none font-futuraL bg-secondaryC border-secondaryC focus:border-accentC text-textC">
                         </div>
                         <div class="relative mb-4">
                             <label for="message"
-                                class="leading-7 text-sm text-textC font-futuraB tracking-widest">Message</label>
+                                class="text-sm leading-7 tracking-widest text-textC font-futuraB">Message</label>
                             <textarea id="message" name="_message"
-                                class="w-full sm:h-24 h-16 font-futuraL bg-secondaryC rounded border-2 border-secondaryC focus:border-accentC text-base outline-none resize-none text-textC py-1 px-3 leading-6 transition-colors duration-300 ease-in"></textarea>
+                                class="w-full h-16 px-3 py-1 text-base leading-6 transition-colors duration-300 ease-in border-2 rounded outline-none resize-none sm:h-24 font-futuraL bg-secondaryC border-secondaryC focus:border-accentC text-textC"></textarea>
                         </div>
                         <button type="submit"
-                            class=" bg-accentC border-2 text-primaryHighC font-futuraB tracking-widest border-secondary py-2 px-6 focus:outline-none hover:bg-primaryC hover:text-textC rounded text-lg transition-colors duration-300 ease-in">Contact
+                            class="px-6 py-2 text-lg tracking-widest transition-colors duration-300 ease-in border-2 rounded bg-accentC text-primaryHighC font-futuraB border-secondary focus:outline-none hover:bg-primaryC hover:text-textC">Contact
                             Us
-                            <i class="bx bx-right-arrow-alt items-center justify-center text-2xl "></i>
+                            <i class="items-center justify-center text-2xl bx bx-right-arrow-alt "></i>
                         </button>
                     </form>
-                    <div class="w-4/5 text-center text-base p-4 my-0 mx-auto rounded-2xl" id="status"></div>
-                    <p class="text-xs text-textAltC mt-3 text-center">We respect your privacy and Protecting it
+                    <div class="w-4/5 p-4 mx-auto my-0 text-base text-center rounded-2xl" id="status"></div>
+                    <p class="mt-3 text-xs text-center text-textAltC">We respect your privacy and Protecting it
                         seriously.</p>
                 </div>
             </div>
@@ -148,9 +148,9 @@
 
     <footer>
         <div
-            class="container px-2 md:px-20 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div class="w-80 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                <a class="flex font-medium items-center sm:justify-start justify-center text-textC">
+            class="container flex flex-col flex-wrap px-2 py-16 mx-auto md:px-20 md:items-center lg:items-start md:flex-row md:flex-nowrap">
+            <div class="flex-shrink-0 mx-auto text-center w-80 md:mx-0 md:text-left">
+                <a class="flex items-center justify-center font-medium sm:justify-start text-textC">
                     <img class="w-auto h-12" src="./dist/imgs/logo-flat.png" alt="Logo">
                     <!-- <span class="ml-3 text-3xl md:text-4xl font-futuraB">Brand<span
                             class="text-accentC">Heft</span></span> -->
@@ -161,12 +161,12 @@
                     check off targets on their vision boards. We love conversations – about their goals, ideals and what
                     fuels their passion.</p>
             </div>
-            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 text-center">
+            <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0">
 
-                <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
+                <div class="w-full px-4 md:w-1/3">
+                    <h2 class="mb-3 text-2xl tracking-widest title-font text-textC font-futuraB">
                         TOP SERVICES</h2>
-                    <ul class="list-none mb-10 font-futuraL">
+                    <ul class="mb-10 list-none font-futuraL">
                         <li class="py-0.5">
                             <a class="text-textAltC hover:text-accentC">Branding</a>
                         </li>
@@ -182,10 +182,10 @@
                     </ul>
                 </div>
 
-                <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
+                <div class="w-full px-4 md:w-1/3">
+                    <h2 class="mb-3 text-2xl tracking-widest title-font text-textC font-futuraB">
                         QUICK LINKS</h2>
-                    <nav class="list-none mb-10  font-futuraL">
+                    <nav class="mb-10 list-none font-futuraL">
                         <li class="py-0.5">
                             <a class="text-textAltC hover:text-accentC">Services</a>
                         </li>
@@ -207,10 +207,10 @@
                     </nav>
                 </div>
 
-                <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
+                <div class="w-full px-4 md:w-1/3">
+                    <h2 class="mb-3 text-2xl tracking-widest title-font text-textC font-futuraB">
                         ADDRESS</h2>
-                    <ul class="list-none mb-10 text-textAltC font-futuraL">
+                    <ul class="mb-10 list-none text-textAltC font-futuraL">
                         <li class="py-0.5">
                             Jana path, House No. 17, Bylane 17, Fakharuddin Ali Ahmed Road, Aziz Nagar
                         </li>
@@ -226,12 +226,12 @@
             </div>
         </div>
         <div class="bg-primaryHighC">
-            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-textC text-sm text-center sm:text-left">© 2021 BrandHeft —
-                    <a href="https://twitter.com/AmitDeka10" rel="noopener noreferrer" class="text-textAltC ml-1"
+            <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+                <p class="text-sm text-center text-textC sm:text-left">© 2021 BrandHeft —
+                    <a href="https://twitter.com/AmitDeka10" rel="noopener noreferrer" class="ml-1 text-textAltC"
                         target="_blank">@AmitDeka</a>
                 </p>
-                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                     <a class="text-textC hover:text-fb" href="https://www.facebook.com/brandheft/" target="_blank">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             class="w-6 h-6" viewBox="0 0 24 24">

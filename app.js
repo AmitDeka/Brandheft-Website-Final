@@ -7,26 +7,29 @@ const app = express();
 app.use(express.static(path.join(__dirname, './public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
+    res.status(200).sendFile(path.join(__dirname, './public/index.html'));
 })
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/about.html'));
+    res.status(200).sendFile(path.join(__dirname, './public/about.html'));
 })
 app.get('/services', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/services.html'));
+    res.status(200).sendFile(path.join(__dirname, './public/services.html'));
 })
 app.get('/testimonial', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/testimonial.html'));
+    res.status(200).sendFile(path.join(__dirname, './public/testimonial.html'));
 })
 app.get('/digitalNE', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/digitalne.html'));
+    res.status(200).sendFile(path.join(__dirname, './public/digitalne.html'));
 })
 // blog
 app.get('/digitalNE', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/digitalne.html'));
+    res.status(200).sendFile(path.join(__dirname, './public/digitalne.html'));
 })
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/contactus.html'));
+    res.status(200).sendFile(path.join(__dirname, './public/contactus.html'));
+})
+app.get('*', (req, res) => {
+    res.status(404).sendFile(path.join(__dirname, './public/404.html'));
 })
 
 // listen to port 

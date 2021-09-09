@@ -27,18 +27,18 @@
 </head>
 
 <body class="bg-primaryC">
-    <div class="overlay absolute w-full h-screen bg-primaryC top-0 z-999 flex flex-col justify-center items-center">
+    <div class="absolute top-0 flex flex-col items-center justify-center w-full h-screen overlay bg-primaryC z-999">
         <h1
-            class="font-futuraB text-accentC text-4xl md:text-5xl lg:text-8xl tracking-wide md:tracking-wider lg:tracking-widest">
+            class="text-4xl tracking-wide font-futuraB text-accentC md:text-5xl lg:text-8xl md:tracking-wider lg:tracking-widest">
             BrandHeft</h1>
         <span
-            class="font-futuraL text-base md:text-lg lg:text-4xl text-textC opacity-50 md:tracking-wide lg:tracking-wider">Enhancing
+            class="text-base opacity-50 font-futuraL md:text-lg lg:text-4xl text-textC md:tracking-wide lg:tracking-wider">Enhancing
             Mission Stories</span>
     </div>
 
     <!-- navbar starts here -->
 
-    <nav class="flex flex-wrap items-center sticky top-0 left-0 justify-between md:px-10 bg-primaryC z-50 shadow-sm p-3 transition-shadow ease-in"
+    <nav class="sticky top-0 left-0 z-50 flex flex-wrap items-center justify-between p-3 transition-shadow ease-in shadow-sm md:px-10 bg-primaryC"
         id="navBar">
         <a href="/" class="flex items-center text-textC">
             <img class="w-12 h-12 md:w-14 md:h-14" src="./dist/imgs/logo-circle.png" alt="Logo">
@@ -46,23 +46,23 @@
         </a>
         <div class="flex md:hidden">
             <button id="hamburger">
-                <img class="toggle block" src="./dist/imgs/icon/bars.svg" width="30" height="30" />
-                <img class="toggle hidden" src="./dist/imgs/icon/times.svg" width="30" height="30" />
+                <img class="block toggle" src="./dist/imgs/icon/bars.svg" width="30" height="30" />
+                <img class="hidden toggle" src="./dist/imgs/icon/times.svg" width="30" height="30" />
             </button>
         </div>
-        <div class="toggle hidden w-full md:w-auto md:flex text-center font-futuraL mt-2 md:mt-0">
-            <a href="/about" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">About</a>
+        <div class="hidden w-full mt-2 text-center toggle md:w-auto md:flex font-futuraL md:mt-0">
+            <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">About</a>
             <a href="/services"
-                class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 scroll-smooth">Services</a>
+                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC scroll-smooth">Services</a>
             <a href="/testimonial"
-                class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Testimonials</a>
-            <a href="/digitalNE" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Digital
+                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Testimonials</a>
+            <a href="/digitalNE" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Digital
                 NE</a>
-            <a href="#" class="block md:inline-block text-textC hover:text-accentC text-xl px-3 py-3 ">Blog</a>
+            <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Blog</a>
         </div>
-        <div class="toggle hidden w-full sm:w-auto md:flex text-center font-futuraL py-3 md:py-0">
+        <div class="hidden w-full py-3 text-center toggle sm:w-auto md:flex font-futuraL md:py-0">
             <a href="/contact"
-                class="toggle hidden sm:flex font-futuraM text-textC bg-primaryC border-2 border-accentC py-2 px-4 focus:outline-none hover:bg-accentC hover:text-white transition-colors duration-300 rounded-full text-base mt-4 md:mt-0">Contact
+                class="hidden px-4 py-2 mt-4 text-base transition-colors duration-300 border-2 rounded-full toggle sm:flex font-futuraM text-textC bg-primaryC border-accentC focus:outline-none hover:bg-accentC hover:text-white md:mt-0">Contact
                 Us
             </a>
         </div>
@@ -72,14 +72,14 @@
 
     <main>
         <!-- hero starts here -->
-        <section class="overflow-x-hidden w-full h-screen">
-            <div class="container mx-auto flex flex-col md:flex-row items-center md:pb-1 md:px-14">
-                <div class="w-4/5 md:w-3/5 justify-center items-center p-5 md:p-8" id="hero_image">
+        <section class="w-full h-screen overflow-x-hidden">
+            <div class="container flex flex-col items-center mx-auto md:flex-row md:pb-1 md:px-14">
+                <div class="items-center justify-center w-4/5 p-5 md:w-3/5 md:p-8" id="hero_image">
                     <img class="object-cover object-center rounded" src="./dist/imgs/office.png" alt="Office">
                 </div>
-                <div class="w-11/12 md:2/5 justify-center items-center pt-4 md:pt-20 p-1" id="hero_text">
+                <div class="items-center justify-center w-11/12 p-1 pt-4 md:2/5 md:pt-20" id="hero_text">
                     <h1
-                        class="text-center font-futuraB md:text-6xl text-4xl leading-tight text-textC mb-10 tracking-wide">
+                        class="mb-10 text-4xl leading-tight tracking-wide text-center font-futuraB md:text-6xl text-textC">
                         Exclusive
                         Design and
                         Marketing
@@ -90,14 +90,10 @@
 
                     <div class="flex justify-center">
                         <a href="/contact"
-                            class="inline-flex text-pureW bg-secondary border-2 border-secondary py-3 px-6 focus:outline-none hover:bg-primaryC hover:text-textC rounded-full text-lg">Join
+                            class="inline-flex px-6 py-3 text-lg border-2 rounded-full text-pureW bg-secondary border-secondary focus:outline-none hover:bg-primaryC hover:text-textC">Join
                             Now</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="w-full pt-2 pb-10">
-                <h1 class="text-center font-futuraB text-7xl">Enhancing Mission Stories</h1>
             </div>
         </section>
 
@@ -107,23 +103,23 @@
 
         <!-- goals starts here -->
 
-        <section class="text-gray-600 mt-10 mb-32">
-            <div class="container px-10 md:px-32 mx-auto section_container">
-                <div class="text-center mb-20">
-                    <h1 class="text-5xl font-futuraB title-font text-textC mb-4">Our Goal</h1>
-                    <div class="flex mt-6 justify-center">
-                        <div class="w-16 h-1 rounded-full bg-accentC inline-flex"></div>
+        <section class="mt-10 mb-32 text-gray-600">
+            <div class="container px-10 mx-auto md:px-32 section_container">
+                <div class="mb-20 text-center">
+                    <h1 class="mb-4 text-5xl font-futuraB title-font text-textC">Our Goal</h1>
+                    <div class="flex justify-center mt-6">
+                        <div class="inline-flex w-16 h-1 rounded-full bg-accentC"></div>
                     </div>
                 </div>
                 <div class="flex flex-wrap -m-2 section_content">
-                    <div class="p-4 md:p-8 lg:w-1/3 z-40">
+                    <div class="z-40 p-4 md:p-8 lg:w-1/3">
                         <div class="card tilt_card">
-                            <img class="h-36 w-36 mx-auto pb-8" src="./dist/imgs/icon/branding.svg" alt="Branding IMG">
-                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3">
+                            <img class="pb-8 mx-auto h-36 w-36" src="./dist/imgs/icon/branding.svg" alt="Branding IMG">
+                            <h1 class="mb-3 text-3xl title-font md:text-4xl font-futuraB text-textC">
                                 Brand
-                                Markeking
+                                Marketing
                             </h1>
-                            <p class="leading-relaxed text-xl font-futuraL text-textAltC mb-3">We aim
+                            <p class="mb-3 text-xl leading-relaxed font-futuraL text-textAltC">We aim
                                 to
                                 provide
                                 complete branding
@@ -133,12 +129,12 @@
                         </div>
                     </div>
 
-                    <div class="p-4 md:p-8 lg:w-1/3 z-40">
+                    <div class="z-40 p-4 md:p-8 lg:w-1/3">
                         <div class="card tilt_card">
-                            <img class="h-36 w-36 mx-auto pb-8" src="./dist/imgs/icon/digital.svg" alt="Digital IMG">
-                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3">
+                            <img class="pb-8 mx-auto h-36 w-36" src="./dist/imgs/icon/digital.svg" alt="Digital IMG">
+                            <h1 class="mb-3 text-3xl title-font md:text-4xl font-futuraB text-textC">
                                 Digital NE</h1>
-                            <p class="leading-relaxed text-xl font-futuraL text-textAltC mb-3">To support
+                            <p class="mb-3 text-xl leading-relaxed font-futuraL text-textAltC">To support
                                 entrepreneurs
                                 and creators
                                 of the
@@ -147,18 +143,18 @@
                         </div>
                     </div>
 
-                    <div class="p-4 md:p-8 lg:w-1/3 z-40">
+                    <div class="z-40 p-4 md:p-8 lg:w-1/3">
                         <div class="card tilt_card">
-                            <img class="h-36 w-36 mx-auto pb-8" src="./dist/imgs/icon/creative.svg" alt="Creative IMG">
-                            <h1 class="title-font text-3xl md:text-4xl font-futuraB text-textC mb-3">
+                            <img class="pb-8 mx-auto h-36 w-36" src="./dist/imgs/icon/creative.svg" alt="Creative IMG">
+                            <h1 class="mb-3 text-3xl title-font md:text-4xl font-futuraB text-textC">
                                 Creative Club
                             </h1>
-                            <p class="leading-relaxed text-xl text-textAltC font-futuraL mb-3">To help
+                            <p class="mb-3 text-xl leading-relaxed text-textAltC font-futuraL">To help
                                 creative
                                 individuals convert
                                 their
-                                passion into a thriving career and build a personal brand.</p>
-
+                                passion into a thriving career and build a personal brand.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -170,25 +166,25 @@
 
         <!-- how we do it starts here -->
 
-        <section class="text-gray-600 overflow-x-hidden">
+        <section class="overflow-x-hidden text-gray-600">
             <div
-                class="container mx-auto flex px-10 md:px-20 py-24 md:flex-row flex-col items-center section_container_text">
+                class="container flex flex-col items-center px-10 py-24 mx-auto md:px-20 md:flex-row section_container_text">
                 <div
-                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center section_text_slide">
-                    <h1 class="text-6xl md:text-7xl mb-8 md:mb-12 font-futuraB text-textC">How We Do It ?
+                    class="flex flex-col items-center mb-8 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 section_text_slide">
+                    <h1 class="mb-8 text-6xl md:text-7xl md:mb-12 font-futuraB text-textC">How We Do It ?
                     </h1>
-                    <h3 class="text-2xl md:text-3xl mb-6 md:mb-8 font-futuraL text-textAltC "> Strategic Discussion
+                    <h3 class="mb-6 text-2xl md:text-3xl md:mb-8 font-futuraL text-textAltC "> Strategic Discussion
                     </h3>
                     <p
-                        class="mb-6 leading-relaxed text-base md:text-xl font-futuraM tracking-wide md:tracking-widest text-textC">
+                        class="mb-6 text-base leading-relaxed tracking-wide md:text-xl font-futuraM md:tracking-widest text-textC">
                         We
                         become the very first
                         audience of your story, which helps us understand your company ideals, goals and problems. Then
                         we come up with the best possible ideas and solutions to make your company a Brand.</p>
 
                 </div>
-                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full section_image_fadein">
-                    <img class="object-cover object-center h-auto w-auto" alt="hero" src="./dist/imgs/howwedoit.png">
+                <div class="w-full lg:max-w-lg lg:w-full md:w-1/2 section_image_fadein">
+                    <img class="object-cover object-center w-auto h-auto" alt="hero" src="./dist/imgs/howwedoit.png">
                 </div>
             </div>
         </section>
@@ -197,15 +193,15 @@
 
         <!-- questins starts here -->
         <section class="text-gray-600 body-font">
-            <div class="container px-10 py-24 mx-auto flex justify-center items-center">
-                <div class="text-center mb-16">
-                    <h1 class="text-5xl font-futuraB title-font text-textC mb-4">Question Section</h1>
-                    <div class="flex mt-6 justify-center">
-                        <div class="w-16 h-1 rounded-full bg-accentC inline-flex"></div>
+            <div class="container flex items-center justify-center px-10 py-24 mx-auto">
+                <div class="mb-16 text-center">
+                    <h1 class="mb-4 text-5xl font-futuraB title-font text-textC">Question Section</h1>
+                    <div class="flex justify-center mt-6">
+                        <div class="inline-flex w-16 h-1 rounded-full bg-accentC"></div>
                     </div>
                     <div class="mt-12">
-                        <div class="rounded-lg h-auto overflow-hidden flex justify-center items-center">
-                            <img alt="content" class="object-cover object-center h-11/12 w-11/12 md:h-1/3 md:w-1/3"
+                        <div class="flex items-center justify-center h-auto overflow-hidden rounded-lg">
+                            <img alt="content" class="object-cover object-center w-11/12 h-11/12 md:h-1/3 md:w-1/3"
                                 src="./dist/imgs/thnking.png">
                         </div>
                     </div>
@@ -219,208 +215,142 @@
 
         <!-- services starts here -->
 
-        <section class="overflow-x-hidden" id="service">
-            <div class="container px-20 md:px-32 py-24 mx-auto service_container">
-                <div class="text-center mb-10">
-                    <h1 class="text-5xl font-futuraB  text-textC mb-4">Our Services</h1>
-                    <div class="flex mt-6 justify-center">
-                        <div class="w-16 h-1 rounded-full bg-accentC inline-flex"></div>
+        <section class="overflow-hidden" id="service">
+            <div class="container px-20 py-24 mx-auto md:px-32">
+                <div class="mb-10 text-center">
+                    <h1 class="mb-4 text-5xl font-futuraB text-textC">Our Services</h1>
+                    <div class="flex justify-center mt-6">
+                        <div class="inline-flex w-16 h-1 rounded-full bg-accentC"></div>
                     </div>
                 </div>
-                <div class="flex flex-wrap -m-4 justify-center">
-                    <div class="p-4 md:w-1/4 service_container-slide-x">
-                        <div
-                            class="h-full px-8 py-12 rounded-lg overflow-hidden text-center relative whitespace-nowrap">
-                            <h2 class="font-futuraB tracking-widest text-textC mb-8 text-4xl text-center md:text-left">
-                                Branding</h2>
+                <div class="flex flex-wrap justify-center -m-4 service_container">
+                    <div class="p-5 md:w-1/3 service_container-slide-y1">
+                        <div class="relative h-full px-8 py-12 text-center whitespace-nowrap">
+                            <h2 class="mb-8 text-4xl text-center font-futuraB text-textC md:text-left">
+                                Brand Strategy</h2>
                             <ul
-                                class="flex flex-col items-start text-left text-textAltC -mb-1 space-y-2.5 font-futuraL">
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Brand Attributes
+                                class="flex flex-col items-start text-left text-textAltC -mb-4 space-y-2.5 font-futuraL">
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand purpose
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Brand Structure
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Target audience
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>LOGO Design
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand attributes
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Assessment & Audit
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand book
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Style Guide
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand mission
+                                    statement
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Brand Positioning
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand voice
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand personality
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand kit
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="p-4 md:w-1/4 service_container-slide-x">
-                        <div
-                            class="h-full px-8 py-12 rounded-lg overflow-hidden text-center relative whitespace-nowrap">
-                            <h2 class="font-futuraB tracking-wide text-textC mb-8 text-4xl text-center md:text-left">
-                                Digital Support</h2>
+                    <div class="p-5 md:w-1/3 service_container-slide-y2">
+                        <div class="relative h-full px-8 py-12 text-center whitespace-nowrap">
+                            <h2 class="mb-8 text-4xl text-center font-futuraB text-textC md:text-left">
+                                Brand Identity Designing</h2>
                             <ul
-                                class="flex flex-col items-start text-left text-textAltC font-futuraL -mb-1 space-y-2.5">
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Social Media Management
+                                class="flex flex-col items-start text-center text-textAltC -mb-1 space-y-2.5 font-futuraL">
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Naming and Logo
+                                    Design
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Search Engine Optimisation
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Web Design and
+                                    Development
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span> Social Media Marketing
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Corporate Identity
+                                    Design
+
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Website Design
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Product and Package
+                                    Designing
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>UI/UX design
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Marketing and Brand
+                                    Collateral
+                                    statement
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand Story Video
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Office Space
+                                    Branding
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Brand Icons&#44;
+                                    Graphics&#44; Animations&#44; Sound
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="p-4 md:w-1/4 service_container-slide--x">
-                        <div
-                            class="h-full px-8 py-12 rounded-lg overflow-hidden text-center relative whitespace-nowrap">
-                            <h2 class="font-futuraB tracking-wide text-textC mb-8 text-4xl text-center md:text-left ">
-                                Mission Stories</h2>
+                    <div class="p-5 md:w-1/3 service_container-slide-y3">
+                        <div class="relative h-full px-8 py-12 text-center whitespace-nowrap">
+                            <h2 class="mb-8 text-4xl font-futuraB text-textC md:text-left">
+                                Marketing and Development</h2>
                             <ul
-                                class="flex flex-col items-start text-left font-futuraL text-textAltC -mb-1 space-y-2.5 whitespace-nowrap">
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Mission Statement
+                                class="flex flex-col items-start text-center text-textAltC -mb-1 space-y-2.5 font-futuraL">
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">SEO (Search Engine
+                                    Optimisation)
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Videos
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">PPC (Pay per click)
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Content
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Social Media
+                                    Optimisation (SMO)
                                 </li>
-                                <li>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
-                                            <path d="M20 6L9 17l-5-5"></path>
-                                        </svg>
-                                    </span>Influencer Collaboration
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Social Media
+                                    Marketing (SMM)
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Email Marketing
+                                    statement
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Influencer and
+                                    Celebrity Marketing
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Video Marketing
+                                </li>
+                                <li class="inline-flex items-center justify-center">
+                                    <img src="./dist/imgs/icon/tick.svg" class="w-6 h-6 mr-2" alt="">Content Marketing
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="p-4 md:w-1/4 service_container-slide--x">
+                    <!-- <div class="p-4 md:w-1/3 service_container-slide--x">
                         <div
-                            class="h-full px-8 py-12 rounded-lg overflow-hidden text-center relative whitespace-nowrap">
-                            <h2 class="font-futuraB tracking-wide text-textC mb-8 text-4xl text-center md:text-left">
+                            class="relative h-full px-8 py-12 overflow-hidden text-center rounded-lg whitespace-nowrap">
+                            <h2 class="mb-8 text-4xl tracking-wide text-center font-futuraB text-textC md:text-left">
                                 Printing Services</h2>
                             <ul
                                 class="flex flex-col items-start text-left -mb-1 text-textAltC space-y-2.5 font-futuraL">
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -430,7 +360,7 @@
                                 </li>
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -440,7 +370,7 @@
                                 </li>
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -450,7 +380,7 @@
                                 </li>
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -460,7 +390,7 @@
                                 </li>
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -470,7 +400,7 @@
                                 </li>
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -480,7 +410,7 @@
                                 </li>
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -490,7 +420,7 @@
                                 </li>
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -500,7 +430,7 @@
                                 </li>
                                 <li>
                                     <span
-                                        class="bg-indigo-100 text-indigo-500 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                                        class="inline-flex items-center justify-center w-6 h-6 mr-2 text-indigo-500 bg-indigo-100 rounded-full">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="3" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -510,7 +440,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -523,39 +453,39 @@
         <!-- clients starts here -->
 
         <section>
-            <div class="container px-10 md:px-32 py-10 mx-auto">
-                <div class="text-center mb-20">
-                    <h1 class="text-5xl font-futuraB title-font text-textC mb-4">Our Clients</h1>
-                    <div class="flex mt-6 justify-center">
-                        <div class="w-16 h-1 rounded-full bg-accentC inline-flex"></div>
+            <div class="container px-10 py-10 mx-auto md:px-32">
+                <div class="mb-20 text-center">
+                    <h1 class="mb-4 text-5xl font-futuraB title-font text-textC">Our Clients</h1>
+                    <div class="flex justify-center mt-6">
+                        <div class="inline-flex w-16 h-1 rounded-full bg-accentC"></div>
                     </div>
                 </div>
-                <div class="flex flex-wrap -m-1 justify-center">
-                    <div class="lg:w-1/4 lg:mb-0 mb-6 p-4">
+                <div class="flex flex-wrap justify-center -m-1">
+                    <div class="p-4 mb-6 lg:w-1/4 lg:mb-0">
                         <div class="h-full text-center">
                             <img alt="testimonial"
-                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full"
                                 src="https://dummyimage.com/302x302">
                         </div>
                     </div>
-                    <div class="lg:w-1/4 lg:mb-0 mb-6 p-4">
+                    <div class="p-4 mb-6 lg:w-1/4 lg:mb-0">
                         <div class="h-full text-center">
                             <img alt="testimonial"
-                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full"
                                 src="https://dummyimage.com/300x300">
                         </div>
                     </div>
-                    <div class="lg:w-1/4 lg:mb-0 p-4">
+                    <div class="p-4 lg:w-1/4 lg:mb-0">
                         <div class="h-full text-center">
                             <img alt="testimonial"
-                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full"
                                 src="https://dummyimage.com/305x305">
                         </div>
                     </div>
-                    <div class="lg:w-1/4 lg:mb-0 p-4">
+                    <div class="p-4 lg:w-1/4 lg:mb-0">
                         <div class="h-full text-center">
                             <img alt="testimonial"
-                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full"
                                 src="https://dummyimage.com/305x305">
                         </div>
                     </div>
@@ -568,54 +498,54 @@
         <!-- testimonial starts here -->
 
         <section>
-            <div class="container px-10 md:px-32 py-10 mx-auto">
-                <div class="text-center mb-20">
-                    <h1 class="text-5xl font-futuraB title-font text-textC mb-4">Testimonials</h1>
-                    <div class="flex mt-6 justify-center">
-                        <div class="w-16 h-1 rounded-full bg-accentC inline-flex"></div>
+            <div class="container px-10 py-10 mx-auto md:px-32">
+                <div class="mb-20 text-center">
+                    <h1 class="mb-4 text-5xl font-futuraB title-font text-textC">Testimonials</h1>
+                    <div class="flex justify-center mt-6">
+                        <div class="inline-flex w-16 h-1 rounded-full bg-accentC"></div>
                     </div>
                 </div>
                 <div class="flex flex-wrap -m-4">
-                    <div class="p-4 md:w-1/2 w-full">
-                        <div class="h-full bg-secondaryC p-8 rounded-lg">
+                    <div class="w-full p-4 md:w-1/2">
+                        <div class="h-full p-8 rounded-lg bg-secondaryC">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                class="block w-5 h-5 text-textC mb-4" viewBox="0 0 975.036 975.036">
+                                class="block w-5 h-5 mb-4 text-textC" viewBox="0 0 975.036 975.036">
                                 <path
                                     d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                                 </path>
                             </svg>
-                            <p class="leading-relaxed mb-6 text-textC">Synth chartreuse iPhone lomo cray raw denim
+                            <p class="mb-6 leading-relaxed text-textC">Synth chartreuse iPhone lomo cray raw denim
                                 brunch everyday
                                 carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack
                                 venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
                             <a class="inline-flex items-center">
                                 <img alt="testimonial" src="https://dummyimage.com/106x106"
-                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                                <span class="flex-grow flex flex-col pl-4">
-                                    <span class="title-font font-medium text-textC">Holden Caulfield</span>
-                                    <span class="text-textAltC text-sm">UI DEVELOPER</span>
+                                    class="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full">
+                                <span class="flex flex-col flex-grow pl-4">
+                                    <span class="font-medium title-font text-textC">Holden Caulfield</span>
+                                    <span class="text-sm text-textAltC">UI DEVELOPER</span>
                                 </span>
                             </a>
                         </div>
                     </div>
-                    <div class="p-4 md:w-1/2 w-full">
-                        <div class="h-full bg-secondaryC p-8 rounded">
+                    <div class="w-full p-4 md:w-1/2">
+                        <div class="h-full p-8 rounded bg-secondaryC">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                class="block w-5 h-5 text-textC mb-4" viewBox="0 0 975.036 975.036">
+                                class="block w-5 h-5 mb-4 text-textC" viewBox="0 0 975.036 975.036">
                                 <path
                                     d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                                 </path>
                             </svg>
-                            <p class="leading-relaxed mb-6 text-textC">Synth chartreuse iPhone lomo cray raw denim
+                            <p class="mb-6 leading-relaxed text-textC">Synth chartreuse iPhone lomo cray raw denim
                                 brunch everyday
                                 carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack
                                 venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
                             <a class="inline-flex items-center">
                                 <img alt="testimonial" src="https://dummyimage.com/107x107"
-                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                                <span class="flex-grow flex flex-col pl-4">
-                                    <span class="title-font font-medium text-textC">Alper Kamu</span>
-                                    <span class="text-textAltC text-sm">DESIGNER</span>
+                                    class="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full">
+                                <span class="flex flex-col flex-grow pl-4">
+                                    <span class="font-medium title-font text-textC">Alper Kamu</span>
+                                    <span class="text-sm text-textAltC">DESIGNER</span>
                                 </span>
                             </a>
                         </div>
@@ -632,9 +562,9 @@
 
     <footer>
         <div
-            class="container px-2 md:px-20 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div class="w-80 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                <a class="flex title-font font-medium items-center md:justify-start justify-center text-textC">
+            class="container flex flex-col flex-wrap px-2 py-16 mx-auto md:px-20 md:items-center lg:items-start md:flex-row md:flex-nowrap">
+            <div class="flex-shrink-0 mx-auto text-center w-80 md:mx-0 md:text-left">
+                <a class="flex items-center justify-center font-medium title-font md:justify-start text-textC">
                     <img class="w-12 h-12" src="./dist/imgs/logo-circle.png" alt="Logo">
                     <span class="ml-3 text-3xl md:text-4xl font-futuraB">Brand<span
                             class="text-accentC">Heft</span></span>
@@ -645,12 +575,12 @@
                     check off targets on their vision boards. We love conversations – about their goals, ideals and what
                     fuels their passion.</p>
             </div>
-            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 text-center">
+            <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0">
 
-                <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
+                <div class="w-full px-4 md:w-1/3">
+                    <h2 class="mb-3 text-2xl tracking-widest title-font text-textC font-futuraB">
                         TOP SERVICES</h2>
-                    <ul class="list-none mb-10 font-futuraL">
+                    <ul class="mb-10 list-none font-futuraL">
                         <li class="py-0.5">
                             <a class="text-textAltC hover:text-accentC">Branding</a>
                         </li>
@@ -666,10 +596,10 @@
                     </ul>
                 </div>
 
-                <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
+                <div class="w-full px-4 md:w-1/3">
+                    <h2 class="mb-3 text-2xl tracking-widest title-font text-textC font-futuraB">
                         QUICK LINKS</h2>
-                    <nav class="list-none mb-10  font-futuraL">
+                    <nav class="mb-10 list-none font-futuraL">
                         <li class="py-0.5">
                             <a class="text-textAltC hover:text-accentC">Services</a>
                         </li>
@@ -691,10 +621,10 @@
                     </nav>
                 </div>
 
-                <div class="md:w-1/3 w-full px-4">
-                    <h2 class="title-font text-textC tracking-widest text-2xl font-futuraB mb-3">
+                <div class="w-full px-4 md:w-1/3">
+                    <h2 class="mb-3 text-2xl tracking-widest title-font text-textC font-futuraB">
                         ADDRESS</h2>
-                    <ul class="list-none mb-10 text-textAltC font-futuraL">
+                    <ul class="mb-10 list-none text-textAltC font-futuraL">
                         <li class="py-0.5">
                             Jana path, House No. 17, Bylane 17, Fakharuddin Ali Ahmed Road, Aziz Nagar
                         </li>
@@ -710,12 +640,12 @@
             </div>
         </div>
         <div class="bg-primaryHighC">
-            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-textC text-sm text-center sm:text-left">© 2021 BrandHeft —
-                    <a href="https://twitter.com/AmitDeka10" rel="noopener noreferrer" class="text-textAltC ml-1"
+            <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+                <p class="text-sm text-center text-textC sm:text-left">© 2021 BrandHeft —
+                    <a href="https://twitter.com/AmitDeka10" rel="noopener noreferrer" class="ml-1 text-textAltC"
                         target="_blank">@AmitDeka</a>
                 </p>
-                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                     <a class="text-textC hover:text-fb" href="https://www.facebook.com/brandheft/" target="_blank">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             class="w-6 h-6" viewBox="0 0 24 24">

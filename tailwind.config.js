@@ -25,6 +25,10 @@ module.exports = {
         linkedin: '#0077b5'
       },
 
+      flex: {
+        '12': '0 0 100%',
+      },
+
       fontFamily: {
         futuraL: "'Futura Lt BT', serif",
         futuraM: "'Futura Md BT', sans-serif",
