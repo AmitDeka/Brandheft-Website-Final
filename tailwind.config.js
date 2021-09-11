@@ -25,8 +25,8 @@ module.exports = {
         linkedin: '#0077b5'
       },
 
-      width: {
-        '98/100': '98%',
+      flex: {
+        '6': '0 0 auto',
       },
 
       fontFamily: {

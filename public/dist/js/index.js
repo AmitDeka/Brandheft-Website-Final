@@ -21,6 +21,21 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
+// Testimonial
+
+$(document).ready(function () {
+    $('.dataSortList').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+            $('.dataBox').show('1000');
+        }
+        else {
+            $('.dataBox').not('.' + value).hide('1000');
+            $('.dataBox').filter('.' + value).show('1000');
+        }
+    })
+})
+
 // Tilt
 VanillaTilt.init(document.querySelectorAll(".tilt_card"), {
     max: 25,
