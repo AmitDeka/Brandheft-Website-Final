@@ -25,8 +25,8 @@ module.exports = {
         linkedin: '#0077b5'
       },
 
-      flex: {
-        '12': '0 0 100%',
+      width: {
+        '98/100': '98%',
       },
 
       fontFamily: {
@@ -67,9 +67,11 @@ module.exports = {
       },
     },
     variants: {
+      backgroundColor: ["active"],
       extend: {
-      },
+        // backgroundColor: ['active'],
+      }
     },
-    plugins: [require('tailwindcss-neumorphism')],
+    plugins: [],
   }
 }
