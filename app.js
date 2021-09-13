@@ -15,8 +15,8 @@ app.get('/about', (req, res) => {
 app.get('/services', (req, res) => {
     res.status(200).sendFile(path.join(__dirname, './public/services.html'));
 })
-app.get('/testimonial', (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, './public/testimonial.html'));
+app.get('/works', (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, './public/works.html'));
 })
 app.get('/digitalNE', (req, res) => {
     res.status(200).sendFile(path.join(__dirname, './public/digitalne.html'));

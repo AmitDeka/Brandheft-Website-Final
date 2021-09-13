@@ -12,27 +12,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="dist/imgs/fav/favicon-16x16.png">
     <link rel="manifest" href="dist/imgs/fav/site.webmanifest">
 
-    <link rel="stylesheet" href="dist/css/main.css">
-
-    <style>
-        .tilt_card {
-            transform-style: preserve-3d;
-            transform: perspective(1000px);
-        }
-
-        .tilt_cardC {
-            transform: translateZ(50px);
-        }
-    </style>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/global.css">
 </head>
 
 <body class="bg-primaryC">
     <div class="absolute top-0 flex flex-col items-center justify-center w-full h-screen overlay bg-primaryC z-999">
-        <h1
-            class="text-4xl tracking-wide font-futuraB text-accentC md:text-5xl lg:text-8xl md:tracking-wider lg:tracking-widest">
+        <h1 class="text-5xl tracking-wider md:leading-6 font-futuraB text-accentC md:text-6xl lg:text-7xl">
             BrandHeft</h1>
         <span
-            class="text-base opacity-50 font-futuraL md:text-lg lg:text-4xl text-textC md:tracking-wide lg:tracking-wider">Enhancing
+            class="text-2xl tracking-widest opacity-80 md:leading-6 font-futuraL md:text-3xl lg:text-4xl text-textC">Enhancing
             Mission Stories</span>
     </div>
 
@@ -54,8 +43,7 @@
             <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">About</a>
             <a href="/services"
                 class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC scroll-smooth">Services</a>
-            <a href="/testimonial"
-                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Testimonials</a>
+            <a href="/works" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Works</a>
             <a href="/digitalNE" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Digital
                 NE</a>
             <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Blog</a>
@@ -73,20 +61,24 @@
     <main>
         <!-- hero starts here -->
         <section class="w-full h-screen overflow-x-hidden">
-            <div class="container flex flex-col items-center mx-auto md:flex-row md:pb-1 md:px-14">
-                <div class="items-center justify-center w-4/5 p-5 md:w-3/5 md:p-8" id="hero_image">
+            <div class="container flex flex-col items-center mx-auto md:flex-row md:py-12 md:px-12">
+                <div class="items-center justify-center w-4/5 px-6 py-2 md:w-3/5 md:p-6 heroImg">
                     <img class="object-cover object-center rounded" src="./dist/imgs/office.png" alt="Office">
                 </div>
-                <div class="items-center justify-center w-11/12 p-1 pt-4 md:2/5 md:pt-20" id="hero_text">
+                <div class="items-center justify-center w-11/12 p-1 pt-2 md:pt-20 heroText">
                     <h1
-                        class="mb-10 text-4xl leading-tight tracking-wide text-center font-futuraB md:text-6xl text-textC">
+                        class="mb-4 text-5xl tracking-wide text-center md:mb-6 md:px-4 font-futuraM md:text-6xl text-textC">
+                        Enhancing
+                        Mission Stories</h1>
+                    <h3
+                        class="mb-6 text-2xl tracking-widest text-center md:mb-8 md:px-8 font-futuraL md:text-4xl text-textC">
                         Exclusive
                         Design and
                         Marketing
                         Solution
                         for
                         your
-                        Company's Vision.</h1>
+                        Company's Vision.</h3>
 
                     <div class="flex justify-center">
                         <a href="/contact"
@@ -693,10 +685,9 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <!-- <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/tilt.jquery.min.js"></script> -->
-    <script type="text/javascript" src="./dist/js/vanilla-tilt.min.js"></script>
-    <script src="./dist/js/index.js"></script>
+    <script type="text/javascript" src="./dist/js/vanilla-tilt.min.js" defer></script>
+    <script src="./dist/js/index.js" defer></script>
     <script src="./dist/js/animation.js"></script>
-
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+.tilt_card {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.tilt_cardC {
+    transform: translateZ(50px);
+}
+
+.active {
+    color: #002642;
+    background-color: #e59500;
+}

@@ -34,6 +34,10 @@ $(document).ready(function () {
             $('.dataBox').filter('.' + value).show('1000');
         }
     })
+    // active item
+    $('.dataSortList').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
 })
 
 // Tilt

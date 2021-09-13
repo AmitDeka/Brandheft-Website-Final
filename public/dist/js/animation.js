@@ -3,38 +3,38 @@ gsap.registerPlugin(ScrollTrigger);
 // Overlay 
 gsap.to(".overlay h1", {
     duration: 2,
-    delay: .1,
+    delay: .8,
     opacity: 0,
     y: "-100%",
     ease: Expo.easeIn
 })
 gsap.to(".overlay span", {
     duration: 2,
-    delay: .3,
+    delay: 1,
     opacity: 0,
     y: "-100%",
     ease: Expo.easeIn
 })
 gsap.to(".overlay", {
     duration: 2,
-    delay: .4,
+    delay: 1.2,
     y: "-100%",
-    ease: Expo.easeInOut
+    ease: Expo.easeIn
 })
 
 // Hero section 
-gsap.from("#hero_image", {
+gsap.from(".heroImg", {
     opacity: 0,
     duration: 1,
-    delay: 1,
+    delay: 3,
     x: -100,
     ease: Expo.easeIn
 })
 
-gsap.from("#hero_text", {
+gsap.from(".heroText", {
     opacity: 0,
     duration: 1,
-    delay: 1,
+    delay: 3,
     x: 100,
     ease: Expo.easeIn
 })

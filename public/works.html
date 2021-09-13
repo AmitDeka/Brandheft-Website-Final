@@ -13,13 +13,8 @@
     <link rel="manifest" href="./dist/imgs/fav/site.webmanifest">
 
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/global.css">
 
-    <style>
-        .active {
-            color: #002642;
-            background-color: #e59500;
-        }
-    </style>
 </head>
 
 <body class="bg-primaryC">
@@ -41,8 +36,7 @@
             <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">About</a>
             <a href="/services"
                 class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC scroll-smooth">Services</a>
-            <a href="/testimonial"
-                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Testimonials</a>
+            <a href="/works" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Works</a>
             <a href="/digitalNE" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Digital
                 NE</a>
             <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Blog</a>
@@ -75,7 +69,7 @@
 
         <section>
             <div class="container items-center justify-center px-10 py-10 mx-auto md:px-32">
-                <div class="mb-20 text-center">
+                <div class="mb-8 text-center">
                     <h1 class="mb-4 text-5xl text-textC font-futuraB title-font">Our Works</h1>
                     <div class="flex justify-center mt-6">
                         <div class="inline-flex w-16 h-1 rounded-full bg-accentC"></div>
@@ -83,20 +77,20 @@
                 </div>
 
                 <div class="container flex flex-wrap justify-center px-6 pt-8 pb-16">
-                    <nav class="items-center justify-center pb-8 mx-auto mb-8 md:w-1/2">
-                        <div class="flex flex-col justify-between text-center md:flex-row text-textC">
+                    <nav class="items-center justify-center pb-8 mb-8 md:w-2/3">
+                        <div
+                            class="flex flex-col items-center text-base text-center md:flex-row justify-evenly text-textC md:ml-auto md:mr-auto">
                             <span
-                                class="px-6 py-2 mx-8 my-2 text-2xl tracking-wider transition-all duration-300 ease-in-out border-2 cursor-pointer whitespace-nowrap dataSortList font-futuraB rounded-3xl border-accentC hover:text-primaryC hover:bg-accentC active"
+                                class="w-3/4 px-6 py-2 mx-8 my-2 text-2xl tracking-wider transition-all duration-300 ease-in-out border-2 cursor-pointer md:w-5/12 whitespace-nowrap dataSortList font-futuraB rounded-3xl border-accentC hover:text-primaryC hover:bg-accentC active"
                                 data-filter="all">All
                                 Projects</span>
                             <span
-                                class="px-6 py-2 mx-8 my-2 text-2xl tracking-wider transition-all duration-300 ease-in-out border-2 cursor-pointer whitespace-nowrap dataSortList font-futuraB rounded-3xl border-accentC hover:text-primaryC hover:bg-accentC"
+                                class="w-3/4 px-6 py-2 mx-8 my-2 text-2xl tracking-wider transition-all duration-300 ease-in-out border-2 cursor-pointer md:w-5/12 whitespace-nowrap dataSortList font-futuraB rounded-3xl border-accentC hover:text-primaryC hover:bg-accentC"
                                 data-filter="caseStudy">Case
-                                Studies</span>
+                                Study</span>
                             <span
-                                class="px-6 py-2 mx-8 my-2 text-2xl tracking-wider transition-all duration-300 ease-in-out border-2 cursor-pointer whitespace-nowrap dataSortList font-futuraB rounded-3xl border-accentC hover:text-primaryC hover:bg-accentC"
-                                data-filter="featured">Featured
-                                Projects</span>
+                                class="w-3/4 px-6 py-2 mx-8 my-2 text-2xl tracking-wider transition-all duration-300 ease-in-out border-2 cursor-pointer md:w-5/12 whitespace-nowrap dataSortList font-futuraB rounded-3xl border-accentC hover:text-primaryC hover:bg-accentC"
+                                data-filter="featured">Featured</span>
                         </div>
                     </nav>
 
@@ -819,27 +813,9 @@
 
     <!-- footer ends here -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script type="text/javascript" src="./dist/js/jquery.min.js"></script>
-    <script type="text/javascript" src="./dist/js/index.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.dataSortList').click(function () {
-                const value = $(this).attr('data-filter');
-                if (value == 'all') {
-                    $('.dataBox').show('1000');
-                }
-                else {
-                    $('.dataBox').not('.' + value).hide('1000');
-                    $('.dataBox').filter('.' + value).show('1000');
-                }
-            })
-            // active item
-            $('.dataSortList').click(function () {
-                $(this).addClass('active').siblings().removeClass('active');
-            })
-        })
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
+    <script type="text/javascript" src="./dist/js/jquery.min.js" defer></script>
+    <script type="text/javascript" src="./dist/js/index.js" defer></script>
 </body>
 
 </html>
