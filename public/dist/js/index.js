@@ -1,5 +1,3 @@
-
-
 // Nav toggle 
 document.getElementById("hamburger").onclick = function toggleMenu() {
     const navToggle = document.getElementsByClassName("toggle");
@@ -41,16 +39,11 @@ $(document).ready(function () {
 })
 
 // Tilt
-VanillaTilt.init(document.querySelectorAll(".tilt_card"), {
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 25,
     speed: 1000,
     glare: true,
-    "max-glare": .7,
-    gyroscope: true,
-    gyroscopeMinAngleX: -45,
-    gyroscopeMaxAngleX: 45,
-    gyroscopeMinAngleY: -45,
-    gyroscopeMaxAngleY: 45,
+    "max-glare": .7
 });
 
 

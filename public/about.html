@@ -12,8 +12,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./dist/imgs/fav/favicon-16x16.png">
     <link rel="manifest" href="./dist/imgs/fav/site.webmanifest">
 
-    <link rel="stylesheet" href="./dist/css/main.css">
-    <link rel="stylesheet" href="./dist/css/global.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/global.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -24,7 +24,6 @@
         id="navBar">
         <a href="/" class="flex items-center text-textC">
             <img class="w-12 h-12 md:w-14 md:h-14" src="./dist/imgs/logo-circle.png" alt="Logo">
-            <span class="ml-3 text-2xl md:text-3xl font-futuraB">BrandHeft</span>
         </a>
         <div class="flex md:hidden">
             <button id="hamburger">
@@ -33,11 +32,10 @@
             </button>
         </div>
         <div class="hidden w-full mt-2 text-center toggle md:w-auto md:flex font-futuraL md:mt-0">
-            <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">About</a>
+            <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-accentC hover:text-textC">About</a>
             <a href="/services"
-                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC scroll-smooth">Services</a>
-            <a href="/testimonial"
-                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Testimonials</a>
+                class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC">Services</a>
+            <a href="/works" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Works</a>
             <a href="/digitalNE" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Digital
                 NE</a>
             <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Blog</a>
@@ -77,34 +75,37 @@
                         <div class="inline-flex w-16 h-1 rounded-full bg-accentC"></div>
                     </div>
                 </div>
-                <div class="flex flex-wrap items-center px-4 py-12 mx-auto sm:px-16 sm:py-16">
-                    <div class="mb-10 md:w-1/2 md:pr-12 md:mb-0">
-                        <p class="mb-6 text-xl font-futuraM text-textC"> <span class="text-4xl text-accentC">W</span>e
-                            are a tiny
-                            group
-                            of candid humans based in Guwahati – a riverine port city in India that lies amidst the
-                            beauty of multiple hills and beside the mighty river Brahmaputra.</p>
-                        <p class="text-xl font-futuraM text-textC ">We empathetically collaborate with
-                            entrepreneurial
-                            individuals to check off targets on their vision boards. We love conversations – about their
-                            goals, ideals and what fuels their passion. </p>
+                <div class="container px-4 py-12 mx-auto sm:p-16">
+                    <div class="flex flex-wrap -m-12">
+                        <div class="flex flex-col items-start px-12 py-4 md:w-1/2">
+                            <h2 class="mt-4 mb-4 text-xl font-futuraM text-textC"><span
+                                    class="text-3xl text-accentC">W</span>e
+                                are a tiny
+                                group
+                                of candid humans based in Guwahati – a riverine port city in India that lies amidst the
+                                beauty of multiple hills and beside the mighty river Brahmaputra.</h2>
+                            <h2 class="mb-4 text-xl font-futuraM text-textC">We empathetically collaborate
+                                with
+                                entrepreneurial
+                                individuals to check off targets on their vision boards. We love conversations – about
+                                their
+                                goals, ideals and what fuels their passion.
+                            </h2>
+                        </div>
+                        <div class="flex flex-col items-start px-12 py-4 md:w-1/2">
+                            <h2 class="mt-4 mb-4 text-xl font-futuraM text-textC"><span
+                                    class="text-3xl text-accentC">W</span>hether you
+                                are a visionary, planning to build an
+                                impactful business or a fearless
+                                individual, molding your personal brand, we provide our support to motivate and excite
+                                you
+                                throughout your journey towards achieving that. The next thing you know, you are not
+                                sitting
+                                with team of consultants but a group of friends who are careful thinkers as well as
+                                expert
+                                designers & marketers.</h2>
+                        </div>
                     </div>
-                    <div class="flex flex-col md:w-1/2 md:pl-12">
-                        <p class="text-xl font-futuraM text-textC">Whether you are a visionary, planning to build an
-                            impactful business or a fearless
-                            individual, molding your personal brand, we provide our support to motivate and excite you
-                            throughout your journey towards achieving that. The next thing you know, you are not sitting
-                            with team of consultants but a group of friends who are careful thinkers as well as expert
-                            designers & marketers.</p>
-                    </div>
-                    <!-- <div class="pb-10 mb-10 md:w-1/2 md:pl-12 md:mb-0">
-                        <p class="text-xl font-futuraM text-textC ">Whether you are a visionary, planning to build an
-                            impactful business or a fearless
-                            individual, molding your personal brand, we provide our support to motivate and excite you
-                            throughout your journey towards achieving that. The next thing you know, you are not sitting
-                            with team of consultants but a group of friends who are careful thinkers as well as expert
-                            designers & marketers.</p>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -185,7 +186,7 @@
                 <div
                     class="flex flex-wrap items-center justify-center px-4 py-10 mx-auto gap-y-8 grid-cols-teamCard sm:px-16 sm:py-16">
                     <!-- 1 -->
-                    <div class="cardT tilt_card">
+                    <div class="cardT tilt neumorph">
                         <div class="flex flex-col items-center justify-center">
                             <div class="relative w-24 h-24 mb-3 sm:w-28 sm:h-28 sm:mb-5">
                                 <img class="absolute top-0 left-0 object-cover w-full h-full rounded-full"
@@ -206,7 +207,7 @@
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="cardT tilt_card">
+                    <div class="cardT tilt neumorph">
                         <div class="flex flex-col items-center justify-center">
                             <div class="relative w-24 h-24 mb-3 sm:w-28 sm:h-28 sm:mb-5">
                                 <img class="absolute top-0 left-0 object-cover w-full h-full rounded-full"
@@ -228,7 +229,7 @@
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="cardT tilt_card">
+                    <div class="cardT tilt neumorph">
                         <div class="flex flex-col items-center justify-center">
                             <div class="relative w-24 h-24 mb-3 sm:w-28 sm:h-28 sm:mb-5">
                                 <img class="absolute top-0 left-0 object-cover w-full h-full rounded-full"
@@ -250,7 +251,7 @@
                         </div>
                     </div>
                     <!-- 4 -->
-                    <div class="cardT tilt_card">
+                    <div class="cardT tilt neumorph">
                         <div class="flex flex-col items-center justify-center">
                             <div class="relative w-24 h-24 mb-3 sm:w-28 sm:h-28 sm:mb-5">
                                 <img class="absolute top-0 left-0 object-cover w-full h-full rounded-full"
@@ -271,7 +272,7 @@
                         </div>
                     </div>
                     <!-- 5 -->
-                    <div class="cardT tilt_card">
+                    <div class="cardT tilt neumorph">
                         <div class="flex flex-col items-center justify-center">
                             <div class="relative w-24 h-24 mb-3 sm:w-28 sm:h-28 sm:mb-5">
                                 <img class="absolute top-0 left-0 object-cover w-full h-full rounded-full"
@@ -439,7 +440,14 @@
     <script type="text/javascript" src="./dist/js/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./dist/js/index.js"></script>
     <script type="text/javascript" src="./dist/js/animation.js"></script>
-
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 25,
+            speed: 1000,
+            glare: true,
+            "max-glare": .7
+        });
+    </script>
 
 </body>
 
