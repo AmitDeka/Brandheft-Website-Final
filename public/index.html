@@ -30,7 +30,9 @@
     <nav class="sticky top-0 left-0 z-50 flex flex-wrap items-center justify-between p-3 transition-shadow ease-in shadow-sm md:px-10 bg-primaryC"
         id="navBar">
         <a href="/" class="flex items-center text-textC">
-            <img class="w-12 h-12 md:w-14 md:h-14" src="./dist/imgs/logo-circle.png" alt="Logo">
+            <img class="w-10 h-10 md:w-14 md:h-14" src="./dist/imgs/logo-circle.png" alt="Logo">
+            <span class="ml-2 text-2xl md:text-3xl font-futuraB text-textC">Brand<span
+                    class="text-accentC">Heft.</span></span>
         </a>
         <div class="flex md:hidden">
             <button id="hamburger">
@@ -39,13 +41,16 @@
             </button>
         </div>
         <div class="hidden w-full mt-2 text-center toggle md:w-auto md:flex font-futuraL md:mt-0">
-            <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">About</a>
             <a href="/services"
                 class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC scroll-smooth">Services</a>
             <a href="/works" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Works</a>
+            <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">About</a>
             <a href="/digitalNE" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Digital
                 NE</a>
+            <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Creative Club</a>
             <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Blog</a>
+
+
         </div>
         <div class="hidden w-full py-3 text-center toggle sm:w-auto md:flex font-futuraL md:py-0">
             <a href="/contact"
@@ -59,7 +64,7 @@
 
     <main>
         <!-- hero starts here -->
-        <section class="w-full h-screen overflow-x-hidden">
+        <!-- <section class="w-full h-screen overflow-x-hidden">
             <div class="container flex flex-col items-center mx-auto md:flex-row md:py-12 md:px-12">
                 <div class="items-center justify-center w-4/5 px-6 py-2 md:w-3/5 md:p-6 heroImg">
                     <img class="object-cover object-center rounded" src="./dist/imgs/office.png" alt="Office">
@@ -86,6 +91,34 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section class="w-full h-screen">
+            <div class="container flex flex-col items-center justify-center px-6 mx-auto py-28 sm:py-40">
+                <div class="w-full text-center md:w-1/2">
+                    <h1 class="mb-6 text-6xl font-medium tracking-wider md:text-7xl font-futuraB text-textC">
+                        Enrich Your Brand</h1>
+                    <p class="mb-10 text-2xl tracking-widest sm:text-4xl font-futuraL text-textAltC">Exclusive
+                        Design and
+                        Marketing
+                        Solution
+                        for
+                        your
+                        Company's Vision.</p>
+                    <div class="flex justify-center">
+                        <a
+                            class="inline-flex px-6 py-3 text-lg border-2 rounded-full text-pureW bg-secondary border-secondary focus:outline-none hover:bg-primaryC hover:text-textC">Join
+                            Now</a>
+                    </div>
+                </div>
+                <a href="#goals" class="scroll-down">
+                    <div class="mouse">
+                        <span></span>
+                    </div>
+                    <div class="arrow">
+                        <span></span>
+                    </div>
+                </a>
+            </div>
         </section>
         <!-- hero ends here -->
 
@@ -95,7 +128,7 @@
         <section class="mt-10 mb-32 text-gray-600">
             <div class="container px-10 mx-auto md:px-32 section_container">
                 <div class="mb-20 text-center">
-                    <h1 class="mb-4 text-5xl font-futuraB title-font text-textC">Our Goal</h1>
+                    <h1 class="mb-4 text-5xl font-futuraB title-font text-textC" id="goals">Our Goal</h1>
                     <div class="flex justify-center mt-6">
                         <div class="inline-flex w-16 h-1 rounded-full bg-accentC"></div>
                     </div>
