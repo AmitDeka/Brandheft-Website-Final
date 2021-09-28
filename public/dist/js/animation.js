@@ -23,19 +23,11 @@ gsap.to(".overlay", {
 })
 
 // Hero section 
-gsap.from(".heroImg", {
-    opacity: 0,
-    duration: 1,
-    delay: 3,
-    x: -100,
-    ease: Expo.easeIn
-})
-
 gsap.from(".heroText", {
     opacity: 0,
     duration: 1,
     delay: 3,
-    x: 100,
+    y: 100,
     ease: Expo.easeIn
 })
 
