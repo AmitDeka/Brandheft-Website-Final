@@ -26,7 +26,7 @@
 .mouse{
     width: 1.5rem;
     height: 2.5rem;
-    border: 2px solid #e5dada;
+    border: 2px solid #acadb4;
     border-radius: 2rem;
     margin-bottom: .4rem;
     display: flex;
@@ -35,26 +35,23 @@
 .mouse span{
     width: .5rem;
     height: .5rem;
-    background-color: #e5dada;
+    background-color: #acadb4;
     display: block;
     border-radius: 50%;
     margin: auto;
-    animation: moveWheel 1s linear infinite;
+    animation: moveWheel 1.5s linear infinite;
 }
 
 .arrow span{
     display: block;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1rem;
+    height: 1rem;
     border: 3px solid transparent;
     border-right-color: #e5dada;
     border-bottom-color: #e5dada;
     transform: rotate(45deg);
     animation: moveWheelBar 1.5s linear infinite;
-
 }
-
-
 
 .neumorph{
     box-shadow:  20px 20px 60px #002038,
