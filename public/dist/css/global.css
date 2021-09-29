@@ -30,6 +30,7 @@
     border-radius: 2rem;
     margin-bottom: .4rem;
     display: flex;
+    cursor: pointer;
 }
 
 .mouse span{
@@ -56,6 +57,11 @@
 .neumorph{
     box-shadow:  20px 20px 60px #002038,
              -20px -20px 60px #002c4c;
+}
+
+.bannerImg{  
+    background-image: url(../imgs/servicebanner.jpg);
+    min-height: 100%;
 }
 
 @keyframes moveWheel {

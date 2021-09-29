@@ -40,31 +40,10 @@ module.exports = {
         '999': 999,
       },
 
-      boxShadow: {
-        neu: '0 20px 20px -5px rgba(0, 32, 56, 1), 0 20px 20px -5px rgba(0, 44, 76, 1)',
-      },
-
-      keyframes: {
-        flash: {
-          '0%, 80%': { opacity: '1', pointer: 'all' },
-          '100%': { opacity: '0', pointer: 'none' },
-        }
-      },
-
-      animation: {
-        flash: 'flash 4s ease-in forwards',
-      },
-
       gridTemplateColumns: {
         'teamCard': 'repeat(auto-fill, minmax(350px, 1fr))',
       },
-      neumorphismColor: {
-        primaryC: {
-          1: '#002642',
-          2: '#020d1c'
-        },
 
-      },
     },
     variants: {
       backgroundColor: ["active"],
