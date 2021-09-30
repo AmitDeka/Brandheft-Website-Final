@@ -281,6 +281,7 @@
                 object[key] = value
             });
             var json = JSON.stringify(object);
+            result.classList.add('text-accentC')
             result.innerHTML = "Please wait..."
 
             fetch('https://api.web3forms.com/submit', {
@@ -294,6 +295,8 @@
                 .then(async (response) => {
                     let json = await response.json();
                     if (response.status == 200) {
+                        result.classList.remove('text-accentC')
+                        result.classList.add('text-green-600')
                         result.innerHTML = json.message;
                     } else {
                         console.log(response);
@@ -302,6 +305,8 @@
                 })
                 .catch(error => {
                     console.log(error);
+                    result.classList.remove('text-accentC')
+                    result.classList.add('text-red-600')
                     result.innerHTML = "Something went wrong!";
                 })
                 .then(function () {
