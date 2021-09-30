@@ -52,25 +52,25 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 
 // contact form submit
 
-var form = document.getElementById("contact");
+// var form = document.getElementById("contactForm");
 
-async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById("status");
-    var data = new FormData(event.target);
-    fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(response => {
-        status.classList.add("success");
-        status.innerHTML = "Thank you for getting in touch!";
-        form.reset();
-    }).catch(error => {
-        status.classList.add("error");
-        status.innerHTML = "Oops! We have encountered a problem."
-    });
-}
-form.addEventListener("submit", handleSubmit)
+// async function handleSubmit(event) {
+//     event.preventDefault();
+//     var status = document.getElementById("status");
+//     var data = new FormData(event.target);
+//     fetch(event.target.action, {
+//         method: form.method,
+//         body: data,
+//         headers: {
+//             'Accept': 'application/json'
+//         }
+//     }).then(response => {
+//         status.classList.add("success");
+//         status.innerHTML = "Thank you for getting in touch!";
+//         form.reset();
+//     }).catch(error => {
+//         status.classList.add("error");
+//         status.innerHTML = "Oops! We have encountered a problem."
+//     });
+// }
+// form.addEventListener("submit", handleSubmit)
