@@ -28,10 +28,10 @@
 
     <!-- navbar starts here -->
 
-    <nav class="sticky top-0 left-0 z-50 flex flex-wrap items-center justify-between p-3 transition-shadow ease-in shadow-sm md:px-10 bg-primaryC"
+    <nav class="sticky top-0 left-0 z-50 flex flex-wrap items-center justify-between p-2 transition-shadow ease-in shadow-sm md:px-10 bg-primaryC"
         id="navBar">
         <a href="/" class="flex items-center text-textC">
-            <img class="w-10 h-10 md:w-14 md:h-14" src="./dist/imgs/logo-circle.png" alt="Logo">
+            <img class="w-10 h-10 md:w-12 md:h-12" src="./dist/imgs/logo-circle.png" alt="Logo">
             <span class="ml-2 text-2xl md:text-3xl font-futuraB text-textC">Brand<span
                     class="text-accentC">Heft.</span></span>
         </a>
@@ -93,12 +93,16 @@
                 </div>
             </div>
         </section> -->
-        <section class="w-full h-screen">
-            <div class="container flex flex-col items-center justify-center px-6 mx-auto py-28 sm:py-40">
+        <!-- <section class="w-full h-screen ">
+            <div class="container flex flex-col items-center px-6 pt-2 mx-auto lg:py-28 heroBg">
                 <div class="w-full text-center md:w-1/2 heroText">
-                    <h1 class="mb-6 text-6xl font-medium tracking-wider md:text-7xl font-futuraB text-accentC">
-                        Enrich Your Brand</h1>
-                    <p class="mb-10 text-2xl tracking-widest sm:text-4xl font-futuraL text-textC">Exclusive
+                    <h1
+                        class="mb-2 text-6xl font-medium tracking-wider uppercase md:text-7xl font-futuraB text-accentC">
+                        Enrich</h1>
+                    <h1
+                        class="mb-6 text-6xl font-medium tracking-wider uppercase md:text-7xl font-futuraB text-accentC">
+                        Your Brand</h1>
+                    <p class="mb-8 text-2xl tracking-widest sm:text-4xl font-futuraL text-textC">Exclusive
                         Design and
                         Marketing
                         Solution
@@ -111,16 +115,46 @@
                             Now</a>
                     </div>
                 </div>
-                <a href="#goals" class="scroll-down">
-                    <div class="mouse">
-                        <span></span>
-                    </div>
-                    <div class="arrow">
-                        <span></span>
-                    </div>
-                </a>
+                <div class="hidden md:block">
+                    <a href="#goals" class="scroll-down">
+                        <div class="mouse">
+                            <span></span>
+                        </div>
+                        <div class="arrow">
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
+        </section> -->
+
+        <section class="relative w-full">
+            <div class="container absolute flex flex-col items-center px-6 pt-4 mx-auto lg:py-28">
+                <div class="w-full text-center md:w-1/2 heroText">
+                    <div
+                        class="mb-2 text-6xl font-medium tracking-wider uppercase md:text-7xl font-futuraB text-accentC">
+                        Enrich</div>
+                    <div
+                        class="mb-6 text-6xl font-medium tracking-wider uppercase md:text-7xl font-futuraB text-accentC">
+                        Your Brand</div>
+                    <div class="mb-8 text-2xl tracking-widest sm:text-4xl font-futuraL text-textC">Design and Marketing
+                        Solution for your Company's Vision.</div>
+                    <div class="flex justify-center">
+                        <a
+                            class="inline-flex px-6 py-3 text-lg border-2 rounded-full text-primaryC bg-accentC border-accentC focus:outline-none hover:bg-primaryC hover:text-textC">Join
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="./dist/imgs/heroBanner4.png">
+                <img src="./dist/imgs/heroBannerMobile.png" alt="">
+            </picture>
+            <!-- <img src="./dist/imgs/heroBanner4.png" alt=""> -->
         </section>
+
+
         <!-- hero ends here -->
 
 
@@ -218,7 +252,7 @@
         <!-- how we do it ends here -->
 
         <!-- questins starts here -->
-        <section class="text-gray-600 body-font">
+        <!-- <section class="text-gray-600 body-font">
             <div class="container flex items-center justify-center px-10 py-24 mx-auto">
                 <div class="mb-16 text-center">
                     <h1 class="mb-4 text-5xl font-futuraB title-font text-textC">Question Section</h1>
@@ -233,7 +267,52 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+        <!-- <div class="wrapper">
+            <section class="section section1">
+                <h2>Brand Strategy</h2>
+                <ul>
+                    <li>I want a company name that reflects my vision.</li>
+                    <li>
+                        I do not sell anything different but want to look different from my
+                        competitors.
+                    </li>
+                    <li>I'm not able to raise the prices of my products and services.</li>
+                    <li>
+                        I want to open up to a new market but I don't know how to connect
+                        with the audience there.
+                    </li>
+                    <li>How do I make my product/service interesting?</li>
+                </ul>
+            </section>
+            <section class="section section2">
+                <h2>Identity Design</h2>
+                <ul>
+                    <li>I want a memorable and more functional logo.</li>
+                    <li>
+                        I want to create a virtual experience that is similar to the offline
+                        ambience of my business.
+                    </li>
+                    <li>
+                        I want a visual representation that makes people remember my brand
+                        as soon as they look at it.
+                    </li>
+                    <li>I want a video that goes right into my audience's hearts.</li>
+                    <li>I want my product to stand out on shelves.</li>
+                </ul>
+            </section>
+            <section class="section section3">
+                <h2>Marketing and development</h2>
+                <ul>
+                    <li>I need the best leads for my product/services.</li>
+                    <li>I get many leads but my sales is low.</li>
+                    <li>I want to sent emails to my prospects without getting spamed.</li>
+                    <li>How do I get more return from the money I'm investing?</li>
+                    <li>How do I build a community of loyal customers?</li>
+                </ul>
+            </section>
+        </div> -->
 
 
         <!-- questins ends here -->
@@ -459,7 +538,105 @@
                     </div>
                 </div> -->
 
-                <div class="w-full pt-12 pb-12 swipe-container">
+                <div class="flex items-center justify-center">
+                    <div
+                        class="relative flex-row w-full max-w-screen-sm shadow-xl bg-secondaryC h-96 lg:h-72 rounded-2xl">
+                        <div id="slide" class="absolute top-0 right-0 w-full h-16">
+                            <div class="relative p-10 leading-5 lg:p-8 h-72 text-textC">
+                                <div class="flex items-center mb-6 profile">
+                                    <img src="https://dummyimage.com/200x200" alt=""
+                                        class="w-20 h-20 mr-3 rounded-full lg:mr-6">
+                                    <div>
+                                        <h3 class="mb-1 text-2xl font-futuraM">Lorem ipsum.</h3>
+                                        <p class="text-sm tracking-widest font-futuraB text-accentC">Lorem, ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-base lg:tracking-wide font-futuraL">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit.
+                                    Voluptatum,
+                                    eveniet sit?
+                                    Molestias vel iusto molestiae temporibus sapiente hic voluptates labore id, maiores
+                                    perspiciatis, accusantium tempore doloribus numquam? Animi, dignissimos obcaecati?
+                                </p>
+                            </div>
+
+                            <div class="relative p-10 leading-5 lg:p-8 h-72 text-textC">
+                                <div class="flex items-center mb-6 profile">
+                                    <img src="https://dummyimage.com/200x200" alt=""
+                                        class="w-20 h-20 mr-3 rounded-full lg:mr-6">
+                                    <div>
+                                        <h3 class="mb-1 text-2xl font-futuraM">Lorem ipsaaaaaaaaaaaaaaaaaaum.</h3>
+                                        <p class="text-sm tracking-widest font-futuraB text-accentC">Lorem, ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-base lg:tracking-wide font-futuraL">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit.
+                                    Voluptatum,
+                                    eveniet sit?
+                                    Molestias vel iusto molestiae temporibus sapiente hic voluptates labore id, maiores
+                                    perspiciatis, accusantium tempore doloribus numquam? Animi, dignissimos obcaecati?
+                                </p>
+                            </div>
+
+                            <div class="relative p-10 leading-5 lg:p-8 h-72 text-textC">
+                                <div class="flex items-center mb-6 profile">
+                                    <img src="https://dummyimage.com/200x200" alt=""
+                                        class="w-20 h-20 mr-3 rounded-full lg:mr-6">
+                                    <div>
+                                        <h3 class="mb-1 text-2xl font-futuraM">Lorem aaaaaaaaaaaaipsum.</h3>
+                                        <p class="text-sm tracking-widest font-futuraB text-accentC">Lorem, ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-base lg:tracking-wide font-futuraL">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit.
+                                    Voluptatum,
+                                    eveniet sit?
+                                    Molestias vel iusto molestiae temporibus sapiente hic voluptates labore id, maiores
+                                    perspiciatis, accusantium tempore doloribus numquam? Animi, dignissimos obcaecati?
+                                </p>
+                            </div>
+
+                            <div class="relative p-10 leading-5 lg:p-8 h-72 text-textC">
+                                <div class="flex items-center mb-6 profile">
+                                    <img src="https://dummyimage.com/200x200" alt=""
+                                        class="w-20 h-20 mr-3 rounded-full lg:mr-6">
+                                    <div>
+                                        <h3 class="mb-1 text-2xl font-futuraM">Lorem ipsaaauaaaaam.</h3>
+                                        <p class="text-sm tracking-widest font-futuraB text-accentC">Lorem, ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-base lg:tracking-wide font-futuraL">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit.
+                                    Voluptatum,
+                                    eveniet sit?
+                                    Molestias vel iusto molestiae temporibus sapiente hic voluptates labore id, maiores
+                                    perspiciatis, accusantium tempore doloribus numquam? Animi, dignissimos obcaecati?
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute right-0 flex flex-row items-center justify-between w-full h-16 px-5 py-2 -bottom-8 lg:-bottom-12 sidebar rounded-b-2xl bg-accentC">
+                            <img src="./dist/imgs/icon/left-arrow.svg" class="w-12 h-12 cursor-pointer" id="leftArrow">
+                            <img src="./dist/imgs/icon/right-arrow.svg" class="w-12 h-12 cursor-pointer"
+                                id="rightArrow">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="w-full pt-12 pb-12 swipe-container">
                     <div class="w-full p-4 swi weap md:w-1/2">
                         <div class="h-full p-8 rounded-lg bg-secondaryC">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -505,7 +682,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </section>

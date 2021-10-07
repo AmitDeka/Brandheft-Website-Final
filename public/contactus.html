@@ -23,10 +23,10 @@
 
     <!-- navbar starts here -->
 
-    <nav class="sticky top-0 left-0 z-50 flex flex-wrap items-center justify-between p-3 transition-shadow ease-in shadow-sm md:px-10 bg-primaryC"
+    <nav class="sticky top-0 left-0 z-50 flex flex-wrap items-center justify-between p-2 transition-shadow ease-in shadow-sm md:px-10 bg-primaryC"
         id="navBar">
         <a href="/" class="flex items-center text-textC">
-            <img class="w-10 h-10 md:w-14 md:h-14" src="./dist/imgs/logo-circle.png" alt="Logo">
+            <img class="w-10 h-10 md:w-12 md:h-12" src="./dist/imgs/logo-circle.png" alt="Logo">
             <span class="ml-2 text-2xl md:text-3xl font-futuraB text-textC">Brand<span
                     class="text-accentC">Heft.</span></span>
         </a>
@@ -41,7 +41,7 @@
                 class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC">Services</a>
             <a href="/works" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Works</a>
             <a href="/about" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">About</a>
-            <a href="/digitalNE" class="block px-3 py-3 text-xl md:inline-block text-accentC hover:text-textC ">Digital
+            <a href="/digitalNE" class="block px-3 py-3 text-xl md:inline-block hover:text-accentC text-textC ">Digital
                 NE</a>
             <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Creative Club</a>
             <a href="#" class="block px-3 py-3 text-xl md:inline-block text-textC hover:text-accentC ">Blog</a>
@@ -61,38 +61,38 @@
     <main>
         <!-- contact form starts here -->
 
-        <section class="relative body-font">
-            <div class="container flex flex-wrap px-10 pt-12 pb-20 mx-auto sm:px-24 sm:py-4 sm:flex-nowrap">
+        <section class="relative">
+            <div class="container flex flex-wrap px-10 pt-12 pb-20 mx-auto sm:px-24 sm:py-2 sm:flex-nowrap">
                 <div
-                    class="relative flex items-end justify-start px-8 pt-48 pb-8 overflow-hidden rounded-lg md:w-1/2 bg-primaryC sm:mr-10 md:p-10 md:px-20 sm:pb-10">
+                    class="relative flex items-end justify-start px-8 pt-48 pb-8 overflow-hidden rounded-lg md:w-1/2 bg-primaryC sm:mr-10 sm:p-10 sm:px-20 sm:pb-10 map-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.697226886735!2d91.81428991495345!3d26.141413283465784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a59cba131bca3%3A0x6b47c4822f564946!2sBrandHeft!5e0!3m2!1sen!2sin!4v1630332812655!5m2!1sen!2sin"
                         width="100%" height="100%" style="border:0; filter: grayscale(.1) contrast(1.2) opacity(.7);"
-                        class="absolute inset-0" frameborder="0" marginheight="10" marginwidth="10" title="map"
+                        class="absolute inset-0" frameborder="0" marginheight="" marginwidth="0" title="map"
                         loading="lazy"></iframe>
-                    <div class="relative flex flex-wrap py-10 rounded shadow-xl bg-primaryC">
+                    <div class="relative flex flex-wrap py-8 rounded shadow-xl bg-primaryC">
                         <div class="px-6 md:w-1/2">
-                            <h2 class="text-xs tracking-widest font-futuraB text-textC">ADDRESS</h2>
+                            <h2 class="text-base tracking-widest font-futuraB text-textC">ADDRESS</h2>
                             <p class="mt-1 font-futuraL text-accentC">Jana path, House No. 17, Bylane 17, Fakharuddin
                                 Ali Ahmed Road,
                                 Aziz Nagar
                             </p>
                         </div>
                         <div class="px-6 mt-4 md:w-1/2 md:mt-0">
-                            <h2 class="text-xs tracking-widest font-futuraB text-textC">EMAIL</h2>
+                            <h2 class="text-base tracking-widest font-futuraB text-textC">EMAIL</h2>
                             <a class="leading-relaxed text-accentC font-futuraL"
                                 href="mailto:info@brandheft.com">info@brandheft.com</a>
-                            <h2 class="mt-4 text-xs tracking-widest font-futuraB text-textC">PHONE</h2>
+                            <h2 class="mt-4 text-base tracking-widest font-futuraB text-textC">PHONE</h2>
                             <p class="leading-relaxed text-accentC font-futuraL">123-456-7890</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col w-full mt-8 md:w-1/2 md:ml-auto md:py-8 md:mt-0">
+                <div class="flex flex-col w-full my-8 md:w-1/2 md:py-12 md:mt-0 form-container">
                     <h2 class="mb-1 text-lg font-medium text-textC title-font">Contact Information</h2>
                     <p class="mb-5 leading-relaxed text-textAltC">Fill up the form and our Team will get back to you
                         within 24 hours.</p>
                     <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-                        <input type="hidden" name="apikey" value="38ee0c1e-b8a6-4778-b793-01dfd5987c90">
+                        <input type="hidden" name="apikey" value="c32e7166-7643-4bd3-877f-7eac6b81c28e">
                         <div class="relative mb-4">
                             <label for="name"
                                 class="text-sm leading-7 tracking-widest text-textC font-futuraB">Name</label>
@@ -117,7 +117,6 @@
                             <textarea id="message" name="message" required
                                 class="w-full h-16 px-3 py-1 text-base leading-6 transition-colors duration-300 ease-in border-2 rounded outline-none resize-none sm:h-24 font-futuraL bg-secondaryC border-secondaryC focus:border-accentC text-textC"></textarea>
                         </div>
-                        <!-- <input type="hidden" name="redirect" value="12"> -->
                         <button type="submit"
                             class="inline-flex items-center justify-center px-6 py-2 text-lg tracking-widest transition-colors duration-300 ease-in border-2 rounded bg-accentC text-primaryHighC font-futuraB border-secondary focus:outline-none hover:bg-primaryC hover:text-textC">Contact
                             Us
@@ -127,7 +126,6 @@
                         <div class="w-4/5 mx-auto my-4 text-base text-center" id="result">
                         </div>
                     </form>
-                    <!-- <div class="w-4/5 p-4 mx-auto my-0 text-base text-center rounded-2xl" id="status"></div> -->
                     <p class="mt-3 text-xs text-center text-textAltC">We respect your privacy and Protecting it
                         seriously.</p>
                 </div>
@@ -267,7 +265,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
-    <script src="./dist/js/index.js"></script>
+    <script type="text/javascript" src="./dist/js/index.js"></script>
+    <script type="text/javascript" src="./dist/js/animation.js"></script>
 
     <script type="text/javascript">
         const form = document.getElementById('contactForm');
@@ -281,7 +280,7 @@
                 object[key] = value
             });
             var json = JSON.stringify(object);
-            result.classList.add('text-accentC')
+            result.classList.add('text-yellow-300')
             result.innerHTML = "Please wait..."
 
             fetch('https://api.web3forms.com/submit', {
@@ -295,8 +294,8 @@
                 .then(async (response) => {
                     let json = await response.json();
                     if (response.status == 200) {
-                        result.classList.remove('text-accentC')
-                        result.classList.add('text-green-600')
+                        result.classList.remove('text-yellow-300')
+                        result.classList.add('text-green-300')
                         result.innerHTML = json.message;
                     } else {
                         console.log(response);
@@ -305,8 +304,8 @@
                 })
                 .catch(error => {
                     console.log(error);
-                    result.classList.remove('text-accentC')
-                    result.classList.add('text-red-600')
+                    result.classList.remove('text-yellow-300')
+                    result.classList.add('text-red-300')
                     result.innerHTML = "Something went wrong!";
                 })
                 .then(function () {

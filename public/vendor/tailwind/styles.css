@@ -31,14 +31,7 @@
     .cardT{
         @apply relative px-8 pt-6 m-6 overflow-hidden text-center w-72 h-80 justify-evenly rounded-3xl bg-primaryC;
     }
-
-    .success{
-        @apply bg-green-400 animate-flash;    
-    }
-
-    .error{
-        @apply bg-red-400 animate-flash;
-    }
+    
     .filterli{
         @apply inline-block min-w-full px-6 py-0 text-xl text-center uppercase transition-all duration-75 ease-in-out cursor-pointer text-textC rounded-3xl font-futuraB;
     }
@@ -55,4 +48,5 @@
     .instagram{
         @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in  hover:bg-insta;
     }
+    
 }

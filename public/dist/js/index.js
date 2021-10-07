@@ -22,6 +22,15 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
+// testimonial
+
+var slide = document.getElementById("slide")
+var lArrow = document.getElementById("leftArrow")
+var rArrow = document.getElementById("rightArrow")
+
+let x = 0;
+lArrow.onC
+
 // work 
 
 $(document).ready(function () {
@@ -51,6 +60,7 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 
 
 // contact form submit
+
 
 // var form = document.getElementById("contactForm");
 

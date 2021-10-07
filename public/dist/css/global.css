@@ -59,9 +59,29 @@
              -20px -20px 60px #002c4c;
 }
 
-.bannerImg{  
-    background-image: url(../imgs/servicebanner.jpg);
+.heroBg{
+    background-image: url(../imgs/heroBannerMobile.png);
     min-height: 100%;
+    /* max-width: 100%; */
+    object-fit: contain;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+@media screen and(min-width:480px) {
+    .heroBg{
+        background-image: url(../imgs/Background.png);
+    }
+}
+
+.bannerImg{  
+    background-image: url(../imgs/ArtboardAAa.png);
+    min-height: 100%;
+    object-fit: contain;
+    background-size: contain; 
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 
 @keyframes moveWheel {
@@ -92,3 +112,31 @@
         opacity: 1;
     }
 }
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-self: space-around;
+    background-color: rgba(4, 85, 123, 0.45);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+  }
+  .section h2 {
+    columns: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  

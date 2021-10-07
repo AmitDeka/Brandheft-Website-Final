@@ -31,6 +31,21 @@ gsap.from(".heroText", {
     ease: Expo.easeIn
 })
 
+// contact page
+gsap.from(".map-container", {
+    opacity: 0,
+    duration: 1,
+    delay: 1.2,
+    ease: Expo.easeIn
+})
+
+gsap.from(".form-container", {
+    opacity: 0,
+    duration: 1,
+    y: -100,
+    ease: Expo.easeIn
+})
+
 gsap.from(".section_content", {
     y: 50,
     opacity: 0,
@@ -348,4 +363,20 @@ gsap.to(".digital_NE", {
         toggleActions: " play none reverse none",
         //marker: true,
     },
+});
+
+const tl = gsap.timeline();
+
+tl.to(".wrapper", 5, { x: -window.innerWidth })
+    .from(".section2 h2", 5, { opacity: 0, scale: 3 })
+    .to(".wrapper", 5, { x: -window.innerWidth * 2 })
+    .from(".section3 h2", 5, { opacity: 0, scale: 3 });
+
+ScrollTrigger.create({
+    animation: tl,
+    trigger: ".wrapper",
+    start: "center center",
+    end: "+=4000",
+    scrub: true,
+    pin: true,
 });
