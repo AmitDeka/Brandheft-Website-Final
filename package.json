@@ -4,7 +4,7 @@
   "description": "Landing site for BrandHeft ",
   "main": "app.js",
   "scripts": {
-    "build": "tailwindcss build -i public/vendor/tailwind/styles.css -o public/dist/css/main.css --watch",
+    "build": "tailwindcss build -i public/vendor/tailwind/styles.css -o public/dist/css/main.css",
     "probuild": "tailwindcss build -i public/vendor/tailwind/styles.css -o public/dist/css/main.css --minify",
     "test": "nodemon app.js",
     "start": "node app.js"
