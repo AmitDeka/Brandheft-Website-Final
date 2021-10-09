@@ -130,7 +130,7 @@
         </section> -->
 
         <section class="relative w-full">
-            <div class="container absolute flex flex-col items-center px-6 py-4 mx-auto lg:py-28">
+            <div class="container absolute flex flex-col items-center px-6 py-4 mx-auto lg:justify-center lg:py-28">
                 <div class="w-full text-center md:w-1/2 heroText">
                     <div
                         class="mb-2 text-6xl font-medium tracking-wider uppercase md:text-7xl font-futuraB text-accentC">
@@ -145,12 +145,36 @@
                             class="inline-flex px-6 py-3 text-lg border-2 rounded-full text-primaryC bg-accentC border-accentC focus:outline-none hover:bg-primaryC hover:text-textC">Join
                             Now</a>
                     </div>
+
+                    <!-- <div class="hidden md:block">
+                        <a href="#goals" class="scroll-down">
+                            <div class="mouse">
+                                <span></span>
+                            </div>
+                            <div class="arrow">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div> -->
                 </div>
+                <div class="hidden md:block scroll-down-mouse">
+                    <a href="#goals" class="scroll-down">
+                        <div class="mouse">
+                            <span></span>
+                        </div>
+                        <div class="arrow">
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
-            <picture>
+            <picture class="heroBg">
                 <source media="(min-width: 1024px)" srcset="./dist/imgs/heroBanner4.png">
                 <img src="./dist/imgs/heroBannerMobile.webp" alt="">
             </picture>
+
+
         </section>
         <!-- hero ends here -->
 
@@ -863,19 +887,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
         defer></script>
-    <script src="./dist/js/index.js"></script>
-    <script src="./dist/js/animation.js" defer></script>
-    <script src="./dist/js/vanilla-tilt.min.js" defer></script>
+    <script type="text/javascript" src="./dist/js/vanilla-tilt.min.js" defer></script>
+    <script type="text/javascript" src="./dist/js/index.js"></script>
+    <script type="text/javascript" src="./dist/js/animation.js" defer></script>
     <script src="./dist/js/swiper-bundle.min.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".tilt"), {
-            max: 25,
-            speed: 1000,
-            glare: true,
-            "max-glare": .7
-        });
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 25, speed: 1000, glare: true, "max-glare": .7 });
     </script>
-    <script>
+    <!-- <script>
         var swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
             grabCursor: true,
@@ -892,7 +911,7 @@
                 el: ".swiper-pagination",
             },
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

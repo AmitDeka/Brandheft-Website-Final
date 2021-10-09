@@ -1,6 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Hero section 
+gsap.from(".heroBg", {
+    opacity: 0,
+    duration: 2,
+    delay: 2.5,
+    ease: Expo.easeIn
+})
+
 gsap.from(".heroText", {
     opacity: 0,
     duration: 1,

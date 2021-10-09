@@ -1,3 +1,5 @@
+"use strict"
+
 // Overlay 
 gsap.to(".overlay h1", {
     duration: 2,
