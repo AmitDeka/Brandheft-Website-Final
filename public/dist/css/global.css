@@ -62,20 +62,6 @@
   box-shadow: 20px 20px 60px #002038, -20px -20px 60px #002c4c;
 }
 
-/* .heroBg{
-    background-image: url(../imgs/heroBannerMobile.png);
-    min-height: 100%;
-    object-fit: contain;
-    background-size: contain; 
-    background-repeat: no-repeat; 
-}
-
-@media screen and(min-width:480px) {
-    .heroBg{
-        background-image: url(../imgs/Background.png);
-    }
-} */
-
 .bannerImg {
   background-image: url(../imgs/ArtboardAAa.png);
   min-height: 100%;
