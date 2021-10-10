@@ -22,6 +22,20 @@ gsap.to(".overlay", {
     ease: Expo.easeIn
 })
 
+// contact page
+gsap.from(".map-container", {
+    opacity: 0,
+    duration: 1.5,
+    delay: 1.2,
+    ease: Expo.ease
+})
+
+gsap.from(".form-container", {
+    opacity: 0,
+    duration: 1,
+    x: 100,
+    ease: Expo.easeIn
+})
 
 // Nav toggle 
 document.getElementById("hamburger").onclick = function toggleMenu() {

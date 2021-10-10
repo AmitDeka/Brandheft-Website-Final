@@ -16,20 +16,44 @@ gsap.from(".heroText", {
     ease: Expo.easeIn
 })
 
-// contact page
-gsap.from(".map-container", {
+// service page
+// service_container_1
+gsap.from(".service_img_1", {
+    x: -100,
     opacity: 0,
-    duration: 1,
-    delay: 1.2,
-    ease: Expo.easeIn
-})
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".service_container_1",
+        start: "top 50%",
+        end: "bottom 50%",
+        toggleActions: "play reverse restart reverse"
+    }
+});
 
-gsap.from(".form-container", {
+gsap.from(".service_img_2", {
+    x: 100,
     opacity: 0,
-    duration: 1,
-    y: -100,
-    ease: Expo.easeIn
-})
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".service_container_2",
+        start: "top 50%",
+        end: "bottom 50%",
+        toggleActions: "play reverse restart reverse"
+    }
+});
+
+gsap.from(".service_img_3", {
+    x: -100,
+    opacity: 0,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".service_container_3",
+        start: "top 50%",
+        end: "bottom 50%",
+        toggleActions: "play reverse restart reverse"
+    }
+});
+
 
 gsap.from(".section_content", {
     y: 50,
