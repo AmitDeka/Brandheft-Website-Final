@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
     @font-face {
         font-family: "Futura Lt BT";
         font-weight: 300;
@@ -24,29 +24,167 @@
         font-display: swap;
     }
 
-    .card{
-        @apply relative px-8 pt-5 pb-10 overflow-hidden text-center bg-opacity-100 rounded-lg shadow-2xl h-96 md:h-full bg-secondaryC;
+    .card {
+        @apply relative px-8 pt-5 pb-10 overflow-hidden text-center bg-opacity-100 rounded-lg shadow-2xl h-96 bg-secondaryC;
     }
 
-    .cardT{
+    .cardT {
         @apply relative px-8 pt-6 m-6 overflow-hidden text-center w-72 h-80 justify-evenly rounded-3xl bg-primaryC;
     }
-    
-    .filterli{
+
+    .filterli {
         @apply inline-block min-w-full px-6 py-0 text-xl text-center uppercase transition-all duration-75 ease-in-out cursor-pointer text-textC rounded-3xl font-futuraB;
     }
 
-    .facebook{
-        @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in  hover:bg-fb;
+    .facebook {
+        @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in hover:text-fb;
     }
-    .twitter{
-        @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in  hover:bg-twitter;
+
+    .twitter {
+        @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in hover:text-twitter;
     }
-    .linkedin{
-        @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in  hover:bg-linkedin;
+
+    .linkedin {
+        @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in hover:text-linkedin;
     }
-    .instagram{
-        @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in  hover:bg-insta;
+
+    .instagram {
+        @apply cursor-pointer text-textC text-xl m-1 p-1.5 rounded-full transition duration-75 ease-in hover:text-insta;
     }
-    
+
+}
+
+.tilt {
+    transform-style: preserve-3d;
+    transform: perspective(1500px);
+}
+
+.tilt img,
+.tilt h1,
+.tilt p {
+    transform: translateZ(20px);
+}
+
+.active {
+    color: #002642;
+    background-color: #e59500;
+}
+
+.scroll-down-mouse {
+    position: absolute;
+    bottom: -6rem;
+}
+
+.scroll-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mouse {
+    width: 1.5rem;
+    height: 2.5rem;
+    border: 2px solid #acadb4;
+    border-radius: 2rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.mouse span {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #acadb4;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: moveWheel 1.5s linear infinite;
+}
+
+.arrow span {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid transparent;
+    border-right-color: #e5dada;
+    border-bottom-color: #e5dada;
+    transform: rotate(45deg);
+    animation: moveWheelBar 1.5s linear infinite;
+}
+
+.neumorph {
+    box-shadow: 20px 20px 60px #002038, -20px -20px 60px #002c4c;
+}
+
+.bannerImg {
+    background-image: url(../imgs/ArtboardAAa.png);
+    min-height: 100%;
+    object-fit: contain;
+    background-size: contain;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+@keyframes moveWheel {
+    0% {
+        opacity: 0;
+        transform: translateY(-0.7rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0.7rem);
+    }
+}
+
+@keyframes moveWheelBar {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.section1,
+.section2,
+.section3 {
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-self: space-around;
+    background-color: rgba(4, 85, 123, 0.45);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+}
+
+.section h2 {
+    columns: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
